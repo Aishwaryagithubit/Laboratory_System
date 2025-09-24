@@ -1,4 +1,3 @@
-
 let slideIndex = 0;
 let slideTimer;
 
@@ -54,6 +53,7 @@ function scrollFunction() {
 scrollUpBtn.addEventListener("click", function() {
   window.scrollTo({ top: 0, behavior: 'smooth' });
 });
+
 
 
 
