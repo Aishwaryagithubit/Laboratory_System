@@ -4,8 +4,8 @@
 A modern user friendly and responsive laboratory website designed to provide patients with convenient access to medical testing services, online booking, result inquiries, and informational resources.This system aims to enhance the digital presence of pathology labs and improve patient experience through simplicity, clarity, and effective functionality.
 
 ## 🌐 Live Demo  
-*(If hosted, add your link here)*  
-`https://your-laboratory-website.example.com`
+*(If hosted, i will add link here)*  
+`https://laboratory website.com`
 
 ## ✨ Features
 
