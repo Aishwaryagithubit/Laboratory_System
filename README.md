@@ -1,7 +1,7 @@
 # Laboratory_System
 # 🧪 Hi-Tech Pathology Laboratory System
 
-A modern user friendly and responsive laboratory website designed to provide patients with convenient access to medical testing services, online booking, result inquiries, and informational resources.This system aims to enhance the digital presence of pathology labs and improve patient experience through simplicity, clarity, and effective functionality.
+A modern user friendly and responsive laboratory website designed to provide patients with convenient access to medical testing services, online booking, result inquiries, and informational resources.         This system aims to enhance the digital presence of pathology labs and improve patient experience through simplicity, clarity, and effective functionality.
 
 ## 🌐 Live Demo  
 Link:https://www.hitechpathologylab.com.np/index.html
