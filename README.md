@@ -1,250 +1,93 @@
-<<<<<<< HEAD
-# Hi-Tech Pathology Lab — Digital Healthcare Platform
+# HiTech Laboratory Website
 
-A production grade healthcare website engineered to modernize the digital presence of Hi-Tech Pathology Lab, enabling patients to discover diagnostic services, understand laboratory capabilities, and book tests seamlessly online.
+A modern, responsive healthcare laboratory website developed to provide users with comprehensive information about diagnostic services, health packages, laboratory specialists, and online appointment booking. The project focuses on accessibility, responsive design, user experience, and search engine optimization.
 
-🌐 Live Platform: https://www.hitechpathologylab.com.np/
+## Live Demo
 
-🧠 Vision & Impact
+**Website:** https://aishwaryagithubit.github.io/Laboratory_System/
 
-Hi-Tech Pathology Lab’s website is designed with a patient first digital strategy, bridging the gap between clinical diagnostics and modern web accessibility. The platform ensures:
+## Features
 
-Clear communication of medical services
+- Responsive design optimized for desktop, tablet, and mobile devices
+- Online appointment booking page
+- Laboratory test and diagnostic service information
+- Health package listings
+- Interactive chatbot for visitor assistance
+- Team and specialist profiles
+- Image gallery
+- Contact information and location details
+- Search engine optimization (SEO)
+- Sitemap and robots.txt configuration
 
-Trust through transparency and professionalism
+## Technologies Used
 
-Faster patient engagement via online booking
+- HTML5
+- CSS3
+- JavaScript (ES6)
+- Responsive Web Design
+- Git & GitHub
+- GitHub Pages
 
-Strong institutional branding for healthcare credibility
+## Project Structure
 
-This project reflects real-world healthcare digitization standards, not just a static website.
-
-✨ Core Capabilities
-🔬 Diagnostic Services Showcase
-
-Comprehensive listing of pathology and laboratory tests
-
-Structured, easy-to-understand medical information
-
-Equipment transparency to build patient trust
-
-📅 Online Test Booking
-
-User-friendly booking workflow
-
-Reduced manual appointment handling
-
-Improved patient experience and efficiency
-
-📱 Responsive & Accessible Design
-
-Fully optimized for desktop, tablet, and mobile
-
-Clean, readable UI suitable for healthcare audiences
-
-Accessibility-aware layout and navigation
-
-🧪 Technology & Infrastructure Highlights
-
-Modern, scalable frontend architecture
-
-SEO-optimized content structure
-
-High-performance static delivery
-
-Secure deployment pipeline
-
-🏗️ Architecture Overview
-Hi-Tech Pathology Lab Platform
+```
+Laboratory_System/
 │
-├── Presentation Layer
-│   ├── Responsive UI Components
-│   ├── Service Pages
-│   └── Booking Interface
-│
-├── Content Layer
-│   ├── Laboratory Services
-│   ├── Equipment & Technology
-│   └── Contact & Location Information
-│
-├── Assets
-│   ├── Optimized Images
-│   ├── Stylesheets
-│   └── Client-side Scripts
-│
-└── Deployment & Hosting
-    ├── Domain Configuration
-    ├── Production Hosting
-    └── Performance Optimization
+├── index.html
+├── about.html
+├── services.html
+├── gallery.html
+├── team.html
+├── contact.html
+├── book.html
+├── style.css
+├── script.js
+├── chatbot.js
+├── images/
+├── sitemap.xml
+├── robots.txt
+└── README.md
+```
 
-🛠️ Technology Stack
+## Key Highlights
 
-Built with reliability, maintainability, and performance in mind.
+- Designed a fully responsive healthcare website with a clean and intuitive user interface.
+- Integrated an interactive chatbot to improve user engagement and provide quick access to information.
+- Applied SEO best practices using semantic HTML, sitemap.xml, robots.txt, and optimized page structure.
+- Implemented an appointment booking interface for improved patient accessibility.
+- Organized project assets and maintained version control using Git and GitHub.
 
-Frontend: HTML5, CSS3, JavaScript
+## Installation
 
-UI Framework: Responsive Grid System
+Clone the repository:
 
-Performance: Optimized static assets & caching
+```bash
+git clone https://github.com/Aishwaryagithubit/Laboratory_System.git
+```
 
-SEO: Semantic HTML & metadata optimization
+Navigate to the project directory:
 
-Hosting & Deployment: Managed by V and S Digital Solutions
+```bash
+cd Laboratory_System
+```
 
-📈 Quality Standards
+Open `index.html` in your browser or use a Live Server extension in Visual Studio Code.
 
-✔ Production-ready codebase
-✔ Healthcare-appropriate UI/UX design
-✔ SEO & performance optimized
-✔ Cross-browser compatibility
-✔ Scalable structure for future expansion
+## Future Improvements
 
-# 👩‍💻 Development Leadership
-Aishwarya Sah
+- Backend integration for appointment management
+- Online laboratory report download
+- Secure patient authentication
+- Database integration
+- Email notifications for appointment confirmation
+- Multi-language support
 
-Lead Developer & Digital Architect
+## Author
 
-Responsible for:
+**Aishwarya**
 
-Full website architecture
-
-UI/UX design & implementation
-
-Frontend engineering
-
-Performance & accessibility optimization
-
-This project reflects professional-level healthcare software craftsmanship and real-world deployment standards.
-
-# 🚀 Deployment & Operations
-V and S Digital Solutions
-
-Handled:
-
-Production deployment
-
-Hosting configuration
-
-Domain & live environment setup
-
-Platform availability
-
-🏥 Industry Context
-
-This platform aligns with modern digital health infrastructure trends, supporting:
-
-Healthcare accessibility
-
-Patient engagement automation
-
-Trust-based medical branding
-
-Scalable digital expansion
-
-🔒 License & Usage
-
-This project is proprietary to Hi-Tech Pathology Lab.
-Source code and design assets are intended for authorized use only.
-=======
-# Laboratory_System
-# 🧪 Hi-Tech Pathology Laboratory System
-
-A modern user friendly and responsive laboratory website designed to provide patients with convenient access to medical testing services, online booking, result inquiries, and informational resources.         This system aims to enhance the digital presence of pathology labs and improve patient experience through simplicity, clarity, and effective functionality.
-
-## 🌐 Live Demo  
-Link:https://www.hitechpathologylab.com.np/index.html
-
-## ✨ Features
-
-### ✅ User-Centered Experience
-- Clean, modern, and responsive UI/UX
-- Easy navigation menus and clear information architecture
-
-### 🧬 Laboratory Service Information
-- Dedicated service pages with descriptions
-- Blood test, urine analysis, COVID-19 testing, and more
-
-### 📝 Online Test Booking
-- User-friendly “Book a Test” interface
-- Quick and seamless appointment request submission
-
-### 🏥 About & Contact Pages
-- Provides lab background, mission, and professionalism
-- Integrated Google Map for location guidance
-
-### 🖼️ Gallery & Team Pages
-- Display laboratory environment and medical staff
-
-### 🤖 Built-In Chat Assistant
-- Floating chatbot interface for basic user inquiries
-
-
-
-## 🏛 Tech Stack
-
-| Technology | Purpose |
-|-----------|---------|
-| **HTML5** | Structure and content |
-| **CSS3** | Interface design and styling |
-| **JavaScript** | Interactivity, slider, chatbot toggle & UI logic |
-| **Google Maps Embed** | Location visualization |
-
-
-## 📂 Project Structure
-Hi-Tech-Pathology/
-│
-├── index.html # Homepage
-├── services.html # Services offered by the lab
-├── about.html # About the laboratory
-├── book.html # Book a test page
-├── gallery.html # Photo gallery
-├── contact.html # Contact and map section
-├── team.html # Our team members
-│
-├── style.css # Stylesheet for UI design
-├── script.js # JavaScript interactions & slideshow logic
-│
-├── images/ # Images used in the website
-│ ├── logo.jpeg
-│ ├── a1.jpeg
-│ ├── a2.jpeg
-│ └── ...
-│
-└── README.md # Project documentation
-
-📱 Responsiveness
-
-This project is fully responsive and adjusts seamlessly across:
-
-Desktop & laptop screens
-
-Tablets
-
-Mobile phones
-
-## 🔒 License & Usage Terms (IMPORTANT)
-
-This project is **NOT free to copy, use, modify, publish, or distribute.**
-
-> **All rights are reserved.**  
-> You **cannot** use any part of this project including code, design, layout, images, text, or structure for personal, academic, portfolio, or commercial purposes without **written permission** from the owner.
-
-If you wish to use, modify, or collaborate on this project, please contact first.
+GitHub: https://github.com/Aishwaryagithubit
 
 ---
 
-## 👨‍💻 Author
-
-**Developed By:** *Aishwarya Sah*  
-📍 Nepal  
-🎓 BSc (Hons) Computing | Leeds Beckett University  
-💼 Focus: Healthcare × Technology Solutions 
-
-**Connect with me:**  
-🔗 LinkedIn: **https://www.linkedin.com/in/aishwarya-sah-16580b28b/**  
-📧 Email:`aishwaryasah25@gmail.com`
-
----
-
-### ⭐ If you viewed this project for reference, please respect the ownership and **do not copy or reuse** without permission.
->>>>>>> a757de31355f2161b45e61c61c836991238bbd5f
+This project was developed for educational and portfolio purposes to demonstrate front-end web development, responsive design, and healthcare website implementation.
