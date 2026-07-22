@@ -1,0 +1,113 @@
+{
+  "greeting": "👋 Hello! I'm the Hi-Tech Pathology Lab assistant. How can I help you today?\n\nYou can ask me about:\n• Tests & services\n• Booking a test\n• Timings & location\n• Reports & pricing\n• WhatsApp contact",
+
+  "quickReplies": [
+    "What tests do you offer?",
+    "How do I book a test?",
+    "What are your timings?",
+    "Where are you located?",
+    "How do I get my report?"
+  ],
+
+  "faqs": [
+    {
+      "keywords": ["hello", "hi", "hey", "namaste", "good morning", "good afternoon", "good evening", "help", "start"],
+      "answer": "👋 Hello! Welcome to Hi-Tech Pathology Lab. I'm here to help you with information about our tests, booking, reports, timings, and more.\n\nWhat would you like to know?"
+    },
+    {
+      "keywords": ["test", "tests", "services", "service", "offer", "available", "what do you do", "what can you do"],
+      "answer": "🧪 We offer a wide range of diagnostic services:\n\n• 🩸 Blood Tests (CBC, Blood Sugar, Lipid Profile etc.)\n• 🏥 Urine Analysis\n• 🦠 COVID-19 Testing (RT-PCR & Rapid Antigen)\n• 🫀 Thyroid & Hormone Tests (TSH, T3, T4)\n• 🔬 Biochemistry (Liver, Kidney, Lipid Profile)\n• 🧬 Tumor & Cancer Markers\n• ⚡ Electrolyte Analysis\n• 🩺 Complete Health Checkup Packages\n\nWant details on any specific test?"
+    },
+    {
+      "keywords": ["blood test", "blood", "cbc", "hemoglobin", "hb", "rbc", "wbc", "platelet", "complete blood count"],
+      "answer": "🩸 Blood Tests at Hi-Tech Pathology Lab:\n\nWe perform all blood tests using the world-class **Medonic M Series CBC Analyzer** (made in Sweden).\n\n• Complete Blood Count (CBC)\n• Blood Glucose (Fasting / PP / Random)\n• Hemoglobin (Hb)\n• ESR, Blood Group & more\n\n✅ Accurate results with state-of-the-art equipment.\n\nTo book, visit our lab or contact us on WhatsApp!"
+    },
+    {
+      "keywords": ["thyroid", "tsh", "t3", "t4", "hormone", "immunoassay"],
+      "answer": "🦋 Thyroid & Immunoassay Tests:\n\nWe use the **Tosoh AiA 360** – a world-class Japanese analyzer for precise thyroid testing.\n\n• TSH (Thyroid Stimulating Hormone)\n• T3 (Triiodothyronine)\n• T4 (Thyroxine)\n• Free T3 / Free T4\n• Anti-TPO Antibodies\n\n✅ Highly accurate results from a certified analyzer.\n\nBook your test today!"
+    },
+    {
+      "keywords": ["liver", "kidney", "lipid", "biochemistry", "cholesterol", "creatinine", "uric acid", "sgpt", "sgot", "bilirubin", "urea"],
+      "answer": "🔬 Biochemistry Tests:\n\nWe use **Erba Chem 7 & Erba Chem 6** – Germany-manufactured analyzers for reliable results.\n\n• Liver Function Test (LFT): SGPT, SGOT, Bilirubin\n• Kidney Function Test (KFT): Creatinine, BUN, Uric Acid\n• Lipid Profile: Cholesterol, Triglycerides, HDL, LDL\n• Blood Glucose, HbA1c, and more\n\nContact us or visit the lab for prices."
+    },
+    {
+      "keywords": ["cancer", "tumor", "marker", "psa", "cea", "afp", "ca125", "ca19"],
+      "answer": "🎗️ Cancer & Tumor Marker Tests:\n\nWe use the **Tosoh AiA 360 Immunoassay Analyzer** for cancer marker testing.\n\n• PSA (Prostate Specific Antigen)\n• CEA (Carcinoembryonic Antigen)\n• AFP (Alpha-Fetoprotein)\n• CA-125, CA 19-9 and more\n\nEarly detection matters. Consult your doctor and book your test with us."
+    },
+    {
+      "keywords": ["electrolyte", "sodium", "potassium", "chloride", "imbalance"],
+      "answer": "⚡ Electrolyte Analysis:\n\nWe use a **Micro Lab Electrolyte Analyzer** (world-class Indian-manufactured system).\n\n• Sodium (Na)\n• Potassium (K)\n• Chloride (Cl)\n• Bicarbonate\n\nElectrolyte tests help detect dehydration, kidney disease, and more."
+    },
+    {
+      "keywords": ["covid", "corona", "pcr", "antigen", "rt-pcr", "rapid test"],
+      "answer": "😷 COVID-19 Testing:\n\nWe offer certified and safe COVID-19 testing:\n\n• 🔬 RT-PCR Test (Gold Standard)\n• ⚡ Rapid Antigen Test (Quick Result)\n\nSafe sample collection, accurate and timely results.\n\nContact us or visit for current availability and pricing."
+    },
+    {
+      "keywords": ["urine", "urine test", "urine analysis", "urinalysis", "urine routine"],
+      "answer": "💧 Urine Analysis:\n\nWe provide quick and reliable urine tests:\n\n• Urine Routine & Microscopy\n• Urine Culture & Sensitivity\n• Urine Protein, Glucose\n• 24-hour Urine Tests\n\n✅ Fast turnaround with accurate results."
+    },
+    {
+      "keywords": ["package", "health package", "checkup package", "basic checkup", "advanced checkup", "preventive", "health screening"],
+      "answer": "🏥 Health Checkup Packages:\n\n📦 **Basic Health Checkup** (POPULAR)\nComprehensive preventive screening for routine monitoring and early detection.\n\n📦 **Advanced Health Checkup** (PREMIUM)\nComplete diagnostic package: blood investigations, organ function tests, and detailed health assessment.\n\nGreat value for your health! Visit our lab or contact us on WhatsApp to know the price and book."
+    },
+    {
+      "keywords": ["book", "booking", "appointment", "schedule", "how to book", "reserve"],
+      "answer": "📅 How to Book a Test:\n\nYou can book your test in 3 easy ways:\n\n1️⃣ **Online:** Visit our Book a Test page → book.html\n2️⃣ **WhatsApp:** Chat with us directly\n3️⃣ **Phone:** Call us at +977-9822382156\n4️⃣ **Walk-in:** Visit us at Hospital Road, Janakpurdham\n\nWould you like me to connect you to WhatsApp?"
+    },
+    {
+      "keywords": ["time", "timing", "timing", "open", "opening", "hours", "schedule", "when", "close", "closed"],
+      "answer": "🕐 Lab Timings:\n\n📅 Sunday – Friday:\n• 🌅 Morning: 7:00 AM – 12:00 PM\n• 🌇 Evening: 5:00 PM – 8:00 PM\n\n📅 Saturday:\n• 🌅 Morning: 7:00 AM – 12:00 PM\n\n⚠️ Emergency samples may be accepted outside hours. Please call to confirm."
+    },
+    {
+      "keywords": ["location", "address", "where", "how to reach", "directions", "find you", "map", "hospital road"],
+      "answer": "📍 Our Location:\n\n🏥 **Hi-Tech Pathology Lab**\nHospital Road, Janakpurdham\nDhanusha, Nepal\n\n🗺️ We are conveniently located on the main Hospital Road.\n\nYou can view our location on the map on the homepage, or contact us via WhatsApp for directions!"
+    },
+    {
+      "keywords": ["phone", "call", "number", "contact", "telephone", "mobile"],
+      "answer": "📞 Contact Information:\n\n📱 **Phone/WhatsApp:** +977-9822382156\n📧 **Email:** hplnepal18@gmail.com\n📍 **Address:** Hospital Road, Janakpurdham, Dhanusha, Nepal\n\nWe're available during working hours. You can also reach us on WhatsApp anytime!"
+    },
+    {
+      "keywords": ["whatsapp", "wa", "chat", "message", "reach"],
+      "answer": "💬 You can reach us on WhatsApp!\n\nClick the button below to start a conversation with our team directly on WhatsApp. We'll help you with booking, pricing, and any queries.\n\n👇 Tap below to open WhatsApp:",
+      "whatsappAction": true
+    },
+    {
+      "keywords": ["report", "result", "when will i get", "how long", "report time", "ready", "collect"],
+      "answer": "📋 Test Reports:\n\n⏱️ **Turnaround Time:**\n• Routine tests (CBC, Urine): Same day (2–4 hours)\n• Biochemistry tests: Same day (3–5 hours)\n• Thyroid / Hormone tests: Same day or next day\n• Culture tests: 3–5 days\n• COVID RT-PCR: 24 hours\n\n📲 Reports can be collected in-person or you may ask us about WhatsApp delivery.\n\nCall us for specific report timelines."
+    },
+    {
+      "keywords": ["price", "cost", "rate", "charge", "fee", "how much", "pricing", "affordable"],
+      "answer": "💰 Pricing at Hi-Tech Pathology Lab:\n\nWe offer very affordable and competitive prices for all diagnostic tests.\n\nPrices vary by test type. Please contact us for the latest rates:\n\n📱 **WhatsApp:** +977-9822382156\n📞 **Call:** +977-9822382156\n\nOur team will provide you with the exact pricing for any test you need."
+    },
+    {
+      "keywords": ["home collection", "home sample", "collect at home", "home visit", "doorstep"],
+      "answer": "🏠 Home Sample Collection:\n\nWe may offer home sample collection services in Janakpurdham area.\n\nFor availability and scheduling, please contact us directly:\n\n📱 WhatsApp: +977-9822382156\n📞 Phone: +977-9822382156\n\nOur team will confirm availability and arrange a convenient time for you."
+    },
+    {
+      "keywords": ["who", "founder", "santosh", "established", "history", "about", "experience", "years"],
+      "answer": "🏆 About Hi-Tech Pathology Lab:\n\nFounded by **Mr. Santosh Nirmal**, our lab has completed **20 years of dedicated service** in healthcare diagnostics.\n\n👨‍🔬 Mr. Santosh Nirmal:\n• President – MELAN (Medical Lab Association of Nepal, Dhanusha)\n• BSc. MLT from Bangalore\n• NHPC: A-1156\n\nOur mission: Accurate, reliable, and timely diagnostic services with the highest standards of quality and patient care."
+    },
+    {
+      "keywords": ["machine", "equipment", "instrument", "technology", "analyzer", "lab equipment"],
+      "answer": "🔬 Our World-Class Equipment:\n\n• 🇯🇵 **Tosoh AiA 360** (Japan) – Thyroid & Immunoassay\n• 🇸🇪 **Medonic M Series** (Sweden) – CBC Blood Count\n• 🇩🇪 **Erba Chem 7 & 6** (Germany) – Biochemistry\n• 🇮🇳 **Micro Lab Electrolyte Analyzer** (India) – Electrolytes\n\nWe use internationally certified machines to ensure precision and accuracy in every test."
+    },
+    {
+      "keywords": ["doctor", "referral", "prescription", "need prescription", "without prescription"],
+      "answer": "📄 Do You Need a Doctor's Prescription?\n\nFor most routine tests, you do NOT need a prescription. You can walk in and request any test.\n\nHowever, for certain specialized tests or packages, a doctor's referral may be helpful.\n\nWhen in doubt, feel free to contact us on WhatsApp or call us!"
+    },
+    {
+      "keywords": ["fasting", "fast", "empty stomach", "food before test", "preparation", "prepare"],
+      "answer": "🍽️ Test Preparation – Fasting:\n\nFor accurate results, **fasting is required** for some tests:\n\n✅ **Fast 8–12 hours before:**\n• Blood Sugar (Fasting)\n• Lipid Profile (Cholesterol)\n• Liver Function Test (LFT)\n\n❌ **No fasting needed for:**\n• CBC, Urine Tests\n• Thyroid (TSH) – morning sample preferred\n\nIf unsure, please ask your doctor or call us!"
+    },
+    {
+      "keywords": ["safe", "accurate", "quality", "certified", "reliable", "trust", "good"],
+      "answer": "✅ Why Choose Hi-Tech Pathology Lab?\n\n🏆 20 Years of trusted diagnostic service\n🔬 World-class certified lab equipment\n👨‍🔬 Skilled and experienced professionals\n⏱️ Fast and accurate results\n💰 Affordable pricing\n🧪 Wide range of tests under one roof\n\nYour health is our priority!"
+    },
+    {
+      "keywords": ["bye", "goodbye", "thank you", "thanks", "that's all", "done", "ok", "okay", "great"],
+      "answer": "😊 Thank you for reaching out to Hi-Tech Pathology Lab!\n\nWe wish you good health. Feel free to chat again anytime if you have more questions.\n\nFor quick assistance, you can also:\n📱 WhatsApp: +977-9822382156\n📞 Call: +977-9822382156"
+    }
+  ],
+
+  "fallback": "🤔 I'm sorry, I didn't quite understand that. You can ask me about:\n\n• 🧪 Tests & services\n• 📅 Booking a test\n• 🕐 Lab timings\n• 📍 Location & address\n• 📋 Reports & results\n• 💰 Pricing\n• 📞 Contact & WhatsApp\n\nOr tap a quick reply below!\n\nFor any specific queries, you can also contact us on WhatsApp."
+}

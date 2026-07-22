@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Complete diagnostic services at Hi-Tech Pathology Lab Janakpurdham. Blood tests, urine analysis, CBC, thyroid tests, liver function tests, and more.">
+  <meta name="keywords" content="blood test Janakpurdham, urine test Nepal, CBC test, thyroid test, liver function test, diagnostic services Dhanusha">
+  <meta name="author" content="Hi-Tech Pathology Lab">
+  <meta name="robots" content="index, follow">
+  
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:title" content="Our Services - Hi-Tech Pathology Lab">
+  <meta property="og:description" content="Wide range of diagnostic tests including blood tests, urine analysis, and specialized medical testing in Janakpurdham.">
+  <meta property="og:image" content="./a2.jpeg">
+  <meta property="og:url" content="./services.html">
+  <meta property="og:type" content="website">
+  
+  <title>Our Services - Hi-Tech Pathology Lab, Janakpurdham</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="footer-lang.css" />
+
+  <style>
+    /* ===== SERVICES PAGE PREMIUM ENHANCEMENTS ===== */
+
+    /* Hero */
+    .srv-hero {
+      background: linear-gradient(135deg, #0a2a5e 0%, #1565c0 50%, #00c2ff 100%);
+      padding: 56px 28px 44px;
+      text-align: center;
+    }
+    .srv-hero-badge {
+      display: inline-block;
+      background: rgba(255,255,255,0.15);
+      border: 1px solid rgba(255,255,255,0.3);
+      color: #fff;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      padding: 5px 18px;
+      border-radius: 30px;
+      margin-bottom: 16px;
+      backdrop-filter: blur(4px);
+    }
+    .srv-hero h1 {
+      font-size: clamp(26px, 4.5vw, 42px);
+      font-weight: 800;
+      color: #fff;
+      margin-bottom: 12px;
+      line-height: 1.2;
+    }
+    .srv-hero h1 span { color: #7dd3fc; }
+    .srv-hero p {
+      color: rgba(255,255,255,0.85);
+      max-width: 640px;
+      margin: 0 auto 28px;
+      font-size: 16px;
+      line-height: 1.7;
+    }
+    .srv-hero-pills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: center;
+    }
+    .srv-pill {
+      background: rgba(255,255,255,0.15);
+      border: 1px solid rgba(255,255,255,0.25);
+      color: #fff;
+      font-size: 13px;
+      font-weight: 600;
+      padding: 6px 16px;
+      border-radius: 20px;
+      backdrop-filter: blur(4px);
+    }
+
+    /* Section wrapper */
+    .srv-wrap {
+      max-width: 1160px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    /* Section header */
+    .srv-section-head {
+      text-align: center;
+      padding: 52px 0 28px;
+    }
+    .srv-section-head .eyebrow {
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--accent-2);
+      margin-bottom: 8px;
+    }
+    .srv-section-head h2 {
+      font-size: clamp(22px, 3vw, 32px);
+      font-weight: 800;
+      color: #0a2a5e;
+      margin-bottom: 10px;
+    }
+    .srv-section-head p {
+      color: #666;
+      max-width: 700px;
+      margin: 0 auto;
+      font-size: 15.5px;
+      line-height: 1.7;
+    }
+
+    /* Diagnostic services grid */
+    .srv-cards-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 24px;
+      padding-bottom: 52px;
+    }
+
+    /* Service card */
+    .srv-card {
+      background: #fff;
+      border-radius: 18px;
+      overflow: hidden;
+      box-shadow: 0 4px 22px rgba(10,40,80,0.08);
+      border: 1px solid rgba(96,176,240,0.13);
+      transition: transform 0.22s, box-shadow 0.22s;
+    }
+    .srv-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 16px 44px rgba(10,40,80,0.14);
+    }
+    .srv-card-img {
+      width: 100%;
+      height: 210px;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.4s;
+    }
+    .srv-card:hover .srv-card-img { transform: scale(1.04); }
+    .srv-card-img-wrap { overflow: hidden; }
+    .srv-card-body {
+      padding: 20px 20px 22px;
+    }
+    .srv-card-body h3 {
+      font-size: 17px;
+      font-weight: 800;
+      color: #0a2a5e;
+      margin-bottom: 8px;
+    }
+    .srv-card-body p {
+      font-size: 14px;
+      color: #666;
+      line-height: 1.65;
+      margin-bottom: 14px;
+    }
+    .srv-card-tag {
+      display: inline-block;
+      background: linear-gradient(135deg, #dbeafe, #bfdbfe);
+      color: #1565c0;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+      padding: 4px 12px;
+      border-radius: 20px;
+    }
+
+    /* Machines section bg */
+    .srv-machines-bg {
+      background: linear-gradient(180deg, #f0f8ff 0%, #ffffff 100%);
+      margin: 0 -24px;
+      padding: 0 24px 60px;
+    }
+
+    /* Machine card */
+    .srv-machine-card {
+      background: #fff;
+      border-radius: 18px;
+      overflow: hidden;
+      box-shadow: 0 4px 22px rgba(10,40,80,0.08);
+      border: 1px solid rgba(96,176,240,0.13);
+      transition: transform 0.22s, box-shadow 0.22s;
+      display: flex;
+      flex-direction: column;
+    }
+    .srv-machine-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 16px 44px rgba(10,40,80,0.14);
+    }
+    .srv-machine-img-wrap { overflow: hidden; }
+    .srv-machine-img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.4s;
+    }
+    .srv-machine-card:hover .srv-machine-img { transform: scale(1.04); }
+    .srv-machine-body {
+      padding: 20px 20px 22px;
+      flex: 1;
+    }
+    .srv-machine-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      background: linear-gradient(135deg, #1565c0, #00c2ff);
+      color: #fff;
+      font-size: 11px;
+      font-weight: 700;
+      padding: 4px 12px;
+      border-radius: 20px;
+      margin-bottom: 10px;
+    }
+    .srv-machine-body h3 {
+      font-size: 16px;
+      font-weight: 800;
+      color: #0a2a5e;
+      margin-bottom: 8px;
+    }
+    .srv-machine-body p {
+      font-size: 14px;
+      color: #666;
+      line-height: 1.65;
+    }
+    .srv-machine-body p strong {
+      color: #1565c0;
+    }
+
+    /* Stats bar */
+    .srv-stats-bar {
+      background: linear-gradient(135deg, #0a2a5e, #1565c0);
+      border-radius: 20px;
+      padding: 36px 32px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 24px;
+      text-align: center;
+      margin: 0 0 52px;
+    }
+    .srv-stat .num {
+      font-size: 36px;
+      font-weight: 800;
+      color: #fff;
+      line-height: 1;
+    }
+    .srv-stat .lbl {
+      font-size: 12px;
+      color: rgba(255,255,255,0.72);
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-top: 5px;
+    }
+
+    /* CTA */
+    .srv-cta {
+      background: linear-gradient(135deg, #0a2a5e, #1565c0);
+      border-radius: 20px;
+      padding: 46px 36px;
+      text-align: center;
+      margin-bottom: 60px;
+      position: relative;
+      overflow: hidden;
+    }
+    .srv-cta::before {
+      content:'';
+      position:absolute;
+      inset:0;
+      background: radial-gradient(ellipse at top right, rgba(0,194,255,0.2) 0%, transparent 60%);
+    }
+    .srv-cta h2 { font-size:clamp(20px,3vw,28px); font-weight:800; color:#fff; margin-bottom:10px; position:relative; }
+    .srv-cta p { color:rgba(255,255,255,0.87); font-size:15px; max-width:560px; margin:0 auto 22px; line-height:1.7; position:relative; }
+    .srv-cta-btns { display:flex; gap:14px; justify-content:center; flex-wrap:wrap; position:relative; }
+    .btn-white { background:#fff; color:#1565c0; padding:12px 28px; border-radius:30px; font-weight:700; font-size:14px; text-decoration:none; transition:all 0.2s; display:inline-block; }
+    .btn-white:hover { background:#f0f8ff; transform:translateY(-2px); }
+    .btn-wa { background:#25d366; color:#fff; padding:12px 28px; border-radius:30px; font-weight:700; font-size:14px; text-decoration:none; transition:all 0.2s; display:inline-block; }
+    .btn-wa:hover { background:#1ebe5d; transform:translateY(-2px); }
+  </style>
+</head>
+<body>
+  <!-- Header (same as index) -->
+  <header class="site-header">
+    <div class="header-inner">
+      
+      <!-- Logo and Address Block -->
+      <div class="logo-and-address">
+        <a href="index.html" class="logo"><img src="logo.jpeg" alt="Hi-Tech Pathology Lab logo"></a>
+        <div class="address-block">
+          <div class="address">Janakpurdham</div>
+          <div class="address">Hospital Road</div>
+          <div class="address">Dhanusha, Nepal</div>
+        </div>
+      </div>
+      
+      <button id="navToggle" class="nav-toggle">&#9776;</button>
+      <nav id="mainNav" class="main-nav">
+        <ul class="navmenu">
+          <li><a href="index.html">HOME</a></li>
+          <li><a class="active" href="services.html">OUR SERVICES</a></li>
+          <li><a href="about.html">ABOUT US</a></li>
+          <li><a href="book.html">BOOK A TEST</a></li>
+          <li><a href="gallery.html">GALLERY</a></li>
+          <li><a href="contact.html">CONTACT US</a></li>
+          <li><a href="team.html">OUR TEAM</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main style="margin-top:88px;">
+
+    <!-- HERO -->
+    <div class="srv-hero">
+      <div class="srv-hero-badge">🔬 Janakpurdham's Trusted Lab</div>
+      <h1>Our <span>Diagnostic Services</span></h1>
+      <p>We provide a comprehensive range of diagnostic tests using world class equipment accurate results, fast turnaround, trusted by thousands of patients in Janakpurdham and Dhanusha.</p>
+      <div class="srv-hero-pills">
+        <span class="srv-pill">🩸 Blood Tests</span>
+        <span class="srv-pill">🧪 Urine Analysis</span>
+        <span class="srv-pill">🦠 COVID-19</span>
+        <span class="srv-pill">🫀 Thyroid</span>
+        <span class="srv-pill">🧬 CBC</span>
+        <span class="srv-pill">🫁 Liver &amp; Kidney</span>
+        <span class="srv-pill">🔴 Tumor Markers</span>
+        <span class="srv-pill">⚡ Electrolytes</span>
+      </div>
+    </div>
+
+    <!-- STATS BAR -->
+    <div class="srv-wrap">
+      <div class="srv-stats-bar" style="margin-top:44px;">
+        <div class="srv-stat"><div class="num">100+</div><div class="lbl">Tests Available</div></div>
+        <div class="srv-stat"><div class="num">5</div><div class="lbl">World-Class Machines</div></div>
+        <div class="srv-stat"><div class="num">Same Day</div><div class="lbl">Report Turnaround</div></div>
+        <div class="srv-stat"><div class="num">20+</div><div class="lbl">Years of Experience</div></div>
+      </div>
+    </div>
+
+    <!-- DIAGNOSTIC SERVICES -->
+    <div class="srv-wrap">
+      <div class="srv-section-head">
+        <div class="eyebrow">What We Offer</div>
+        <h2>Diagnostic Services</h2>
+        <p>We provide a wide range of diagnostic services. Please contact our laboratory for further information or support.</p>
+      </div>
+
+      <div class="srv-cards-grid">
+
+        <article class="srv-card" id="blood">
+          <div class="srv-card-img-wrap">
+            <img src="a1.jpeg" alt="Blood tests" class="srv-card-img">
+          </div>
+          <div class="srv-card-body">
+            <h3>Blood Tests</h3>
+            <p>Complete blood counts, lipid profile, liver and kidney panels, sugar levels, hormone assays, and more all under one roof.</p>
+            <span class="srv-card-tag">🩸 Haematology</span>
+          </div>
+        </article>
+
+        <article class="srv-card" id="urine">
+          <div class="srv-card-img-wrap">
+            <img src="a5.jpg" alt="Urine analysis" class="srv-card-img">
+          </div>
+          <div class="srv-card-body">
+            <h3>Urine Analysis</h3>
+            <p>Routine urinalysis, microscopy, and cultures essential for kidney health, infection detection, and diabetes monitoring.</p>
+            <span class="srv-card-tag">🧪 Pathology</span>
+          </div>
+        </article>
+
+        <article class="srv-card" id="covid">
+          <div class="srv-card-img-wrap">
+            <img src="a8.jpg" alt="COVID testing" class="srv-card-img">
+          </div>
+          <div class="srv-card-body">
+            <h3>COVID-19 Testing</h3>
+            <p>RT-PCR and rapid antigen testing with certified, government-recognized reporting for travel, hospital, or clinical needs.</p>
+            <span class="srv-card-tag">🦠 Virology</span>
+          </div>
+        </article>
+
+      </div>
+    </div>
+
+    <!-- MACHINES SECTION -->
+    <div class="srv-machines-bg">
+      <div class="srv-wrap">
+        <div class="srv-section-head">
+          <div class="eyebrow">Our Equipment</div>
+          <h2>World-Class Diagnostic Machines</h2>
+          <p>We use advanced, internationally recognized diagnostic machines to ensure accurate and reliable test results for every patient.</p>
+        </div>
+
+        <div class="srv-cards-grid">
+
+          <article class="srv-machine-card" id="thyroid-machine">
+            <div class="srv-machine-img-wrap">
+              <img src="thyroid.jpeg" alt="Thyroid Testing Machine" class="srv-machine-img">
+            </div>
+            <div class="srv-machine-body">
+              <span class="srv-machine-badge">🇯🇵 Japan</span>
+              <h3>Thyroid &amp; Immunoassay</h3>
+              <p>For thyroid and immunoassay tests, we use <strong>Tosoh AiA 360</strong> a world class Japanese analyzer with exceptional sensitivity and precision.</p>
+            </div>
+          </article>
+
+          <article class="srv-machine-card" id="cbc-machine">
+            <div class="srv-machine-img-wrap">
+              <img src="CBC.jpeg" alt="CBC Analyzer" class="srv-machine-img">
+            </div>
+            <div class="srv-machine-body">
+              <span class="srv-machine-badge">🇸🇪 Sweden</span>
+              <h3>Complete Blood Count (CBC)</h3>
+              <p>For CBC tests, we use <strong>Medonic M Series</strong> a world class Sweden-made hematology analyzer trusted in hospitals globally.</p>
+            </div>
+          </article>
+
+          <article class="srv-machine-card" id="biochemistry-machine">
+            <div class="srv-machine-img-wrap">
+              <img src="Liver.jpeg" alt="Biochemistry Analyzer" class="srv-machine-img">
+            </div>
+            <div class="srv-machine-body">
+              <span class="srv-machine-badge">🇩🇪 Germany</span>
+              <h3>Biochemistry Tests</h3>
+              <p>Liver, kidney, and lipid profile tests are performed using <strong>Erba Chem 7 &amp; Erba Chem 6</strong> Germany manufactured clinical chemistry analyzers.</p>
+            </div>
+          </article>
+
+          <article class="srv-machine-card" id="tumor-marker-machine">
+            <div class="srv-machine-img-wrap">
+              <img src="tumor.jpeg" alt="Tumor Marker Testing" class="srv-machine-img">
+            </div>
+            <div class="srv-machine-body">
+              <span class="srv-machine-badge">🇯🇵 Japan</span>
+              <h3>Cancer &amp; Tumor Markers</h3>
+              <p>Cancer and tumor marker tests are conducted using <strong>Tosoh AiA 360 Immunoassay Analyzer</strong> delivering highly accurate oncology results.</p>
+            </div>
+          </article>
+
+          <article class="srv-machine-card" id="electrolyte-machine">
+            <div class="srv-machine-img-wrap">
+              <img src="electrolytes.jpeg" alt="Electrolyte Analyzer" class="srv-machine-img">
+            </div>
+            <div class="srv-machine-body">
+              <span class="srv-machine-badge">🇮🇳 India</span>
+              <h3>Electrolyte Analysis</h3>
+              <p>For electrolyte imbalance testing, we use a <strong>Micro Lab Electrolyte Analyzer</strong> a world class Indian manufactured system for sodium, potassium, and chloride levels.</p>
+            </div>
+          </article>
+
+        </div>
+
+        <!-- CTA -->
+        <div class="srv-cta">
+          <h2>Ready to Book Your Test?</h2>
+          <p>Fast reports, world class machines, and qualified professionals all in the heart of Janakpurdham. Book now via WhatsApp or online.</p>
+          <div class="srv-cta-btns">
+            <a href="book.html" class="btn-white">📋 Book a Test Online</a>
+            <a href="https://wa.me/9779822382156?text=Hello%2C%20I%20would%20like%20to%20book%20a%20test%20at%20Hi-Tech%20Pathology%20Lab." target="_blank" rel="noopener noreferrer" class="btn-wa">💬 Book via WhatsApp</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </main>
+
+  <footer class="ht-footer" id="site-footer">
+    <div class="ht-footer-inner">
+
+      <div class="ht-footer-brand">
+        <div class="ht-brand-row">
+          <img src="logo.jpeg" alt="Hi-Tech Pathology Lab logo">
+          <div class="ht-brand-name">Hi-Tech Pathology Lab<span>Janakpurdham · Nepal</span></div>
+        </div>
+        <p class="ht-footer-tagline">Accurate, reliable diagnostic testing powered by modern technology and 20+ years of trusted patient care.</p>
+        <div class="ht-social">
+          <a href="https://www.facebook.com/share/1Cw8PfNNuD/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" aria-label="Hi-Tech Pathology Lab on Facebook">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 12.06C22 6.51 17.52 2 12 2S2 6.51 2 12.06c0 5 3.66 9.13 8.44 9.94v-7.03H7.9v-2.91h2.54V9.84c0-2.51 1.49-3.89 3.77-3.89 1.09 0 2.23.2 2.23.2v2.46h-1.26c-1.24 0-1.63.78-1.63 1.58v1.87h2.78l-.44 2.91h-2.34V22c4.78-.81 8.44-4.94 8.44-9.94Z"/></svg>
+          </a>
+          <a href="https://www.instagram.com/hitechpathologylab?igsh=eGNydW0zc2ttOWtv" target="_blank" rel="noopener noreferrer" aria-label="Hi-Tech Pathology Lab on Instagram">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5Zm10 2H7a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3Zm-5 3.5A4.5 4.5 0 1 1 7.5 12 4.5 4.5 0 0 1 12 7.5Zm0 2A2.5 2.5 0 1 0 14.5 12 2.5 2.5 0 0 0 12 9.5Zm5.4-3.4a1 1 0 1 1-1 1 1 1 0 0 1 1-1Z"/></svg>
+          </a>
+        </div>
+        <button type="button" class="ht-back-top" onclick="window.scrollTo({top:0,behavior:'smooth'})">&#8679; BACK TO TOP</button>
+      </div>
+
+      <div class="ht-footer-col">
+        <h4>Site Map</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html" class="active">Our Services</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="book.html">Book a Test</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="team.html">Our Team</a></li>
+        </ul>
+      </div>
+
+      <div class="ht-footer-col">
+        <h4>Get in Touch</h4>
+        <address class="ht-contact-line">Hospital Road, Janakpurdham<br>Dhanusha, Nepal</address>
+        <p class="ht-contact-line"><a href="tel:+9779822382156">+977-9822382156</a></p>
+        <p class="ht-contact-line"><a href="mailto:hplnepal18@gmail.com">hplnepal18@gmail.com</a></p>
+      </div>
+
+    </div>
+
+    <div class="ht-footer-bottom">
+      <p>&copy; 2025 Hi-Tech Pathology Lab. All Rights Reserved.</p>
+      <small>Website by V and S Digital Solutions</small>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

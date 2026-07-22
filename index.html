@@ -1,0 +1,822 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Hi-Tech Pathology Lab in Janakpurdham, Nepal offers accurate diagnostic testing services. Book blood tests, urine tests, and complete health checkups online.">
+  <meta name="keywords" content="pathology lab Janakpurdham, blood test Nepal, diagnostic lab Dhanusha, medical laboratory, health checkup, online booking">
+  <meta name="author" content="Hi-Tech Pathology Lab">
+  <meta name="robots" content="index, follow">
+  
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:title" content="Hi-Tech Pathology Lab - Quality Diagnostic Testing in Janakpurdham">
+  <meta property="og:description" content="Professional pathology lab services in Janakpurdham, Nepal. Accurate results, modern equipment, online booking available.">
+  <meta property="og:image" content="./logo.jpeg">
+  <meta property="og:url" content="./">
+  <meta property="og:type" content="website">
+  
+  <title>Hi-Tech Pathology Lab - Janakpurdham, Nepal | Diagnostic Testing Services</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="footer-lang.css" />
+  
+  <!-- Structured Data Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "MedicalClinic",
+    "name": "Hi-Tech Pathology Lab",
+    "image": "./logo.jpeg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Hospital Road",
+      "addressLocality": "Janakpurdham",
+      "addressRegion": "Dhanusha",
+      "addressCountry": "NP"
+    },
+    "telephone": "+977-9822382156",
+    "url": "./",
+    "priceRange": "$$"
+  }
+  </script>
+
+  <style>
+    /* ============================================
+       HOME PAGE PREMIUM ENHANCEMENTS
+       All new styles — zero existing CSS changed
+    ============================================ */
+
+    /* ── Trust bar below hero ── */
+    .home-trust-bar {
+      background: linear-gradient(135deg, #0a2a5e 0%, #1565c0 60%, #00c2ff 100%);
+      padding: 18px 24px;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 10px 32px;
+    }
+    .home-trust-item {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      color: rgba(255,255,255,0.92);
+      font-size: 13.5px;
+      font-weight: 600;
+    }
+    .home-trust-item .ti-icon { font-size: 18px; }
+
+    /* ── Quick-action floating strip ── */
+    .home-quick-actions {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 14px;
+      padding: 28px 24px 8px;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    .hqa-btn {
+      display: flex;
+      align-items: center;
+      gap: 9px;
+      padding: 13px 22px;
+      border-radius: 40px;
+      font-size: 14px;
+      font-weight: 700;
+      font-family: inherit;
+      text-decoration: none;
+      transition: all 0.2s;
+      cursor: pointer;
+      border: none;
+    }
+    .hqa-btn.primary {
+      background: linear-gradient(135deg, #1565c0, #00c2ff);
+      color: #fff;
+      box-shadow: 0 4px 16px rgba(21,101,192,0.3);
+    }
+    .hqa-btn.primary:hover { transform: translateY(-2px); box-shadow: 0 8px 22px rgba(21,101,192,0.38); }
+    .hqa-btn.green {
+      background: linear-gradient(135deg, #25d366, #1ebe5d);
+      color: #fff;
+      box-shadow: 0 4px 16px rgba(37,211,102,0.28);
+    }
+    .hqa-btn.green:hover { transform: translateY(-2px); box-shadow: 0 8px 22px rgba(37,211,102,0.36); }
+    .hqa-btn.outline {
+      background: #fff;
+      color: #1565c0;
+      border: 2px solid #c8ddf5;
+      box-shadow: 0 2px 10px rgba(10,40,80,0.07);
+    }
+    .hqa-btn.outline:hover { border-color: #60b0f0; transform: translateY(-2px); }
+    .hqa-btn .btn-ico { font-size: 18px; }
+
+    /* ── Stats row ── */
+    .home-stats-row {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+      gap: 0;
+      background: #fff;
+      border-radius: 20px;
+      box-shadow: 0 6px 30px rgba(10,40,80,0.1);
+      border: 1px solid rgba(96,176,240,0.15);
+      max-width: 860px;
+      margin: 24px auto 0;
+      overflow: hidden;
+    }
+    .home-stat-item {
+      text-align: center;
+      padding: 22px 16px;
+      border-right: 1px solid #edf3fb;
+      position: relative;
+    }
+    .home-stat-item:last-child { border-right: none; }
+    .home-stat-item .num {
+      font-size: 30px;
+      font-weight: 800;
+      color: #1565c0;
+      line-height: 1;
+    }
+    .home-stat-item .lbl {
+      font-size: 11.5px;
+      color: #888;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      margin-top: 5px;
+    }
+
+    /* ── About section premium upgrade ── */
+    #about-lab {
+      position: relative;
+    }
+    .about-lab-premium {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 60px 24px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+      align-items: center;
+    }
+    @media(max-width:768px){ .about-lab-premium { grid-template-columns:1fr; gap:32px; padding:40px 20px; } }
+
+    /* Image side */
+    .about-img-premium {
+      position: relative;
+    }
+    .about-img-premium .main-img {
+      width: 100%;
+      height: 400px;
+      object-fit: cover;
+      border-radius: 20px;
+      box-shadow: 0 20px 60px rgba(10,40,80,0.16);
+      display: block;
+    }
+    .about-img-badge {
+      position: absolute;
+      bottom: -18px;
+      right: -18px;
+      background: linear-gradient(135deg, #1565c0, #00c2ff);
+      color: #fff;
+      border-radius: 16px;
+      padding: 14px 18px;
+      text-align: center;
+      box-shadow: 0 8px 24px rgba(21,101,192,0.35);
+      min-width: 110px;
+    }
+    @media(max-width:768px){ .about-img-badge { bottom:-14px; right:12px; } }
+    .about-img-badge .abnum { font-size: 28px; font-weight: 800; line-height: 1; }
+    .about-img-badge .ablbl { font-size: 11px; opacity: 0.85; margin-top: 3px; line-height: 1.3; }
+
+    /* Text side */
+    .about-text-premium .eyebrow {
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: #00c2ff;
+      margin-bottom: 10px;
+    }
+    .about-text-premium h2 {
+      font-size: clamp(24px, 3vw, 34px);
+      font-weight: 800;
+      color: #0a2a5e;
+      line-height: 1.25;
+      margin-bottom: 16px;
+    }
+    .about-text-premium .about-desc {
+      color: #555;
+      line-height: 1.8;
+      font-size: 15.5px;
+      margin-bottom: 22px;
+    }
+    .about-feat-list {
+      list-style: none;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px 16px;
+      margin-bottom: 26px;
+    }
+    @media(max-width:480px){ .about-feat-list { grid-template-columns:1fr; } }
+    .about-feat-list li {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 14px;
+      color: #444;
+      font-weight: 500;
+    }
+    .about-feat-list li::before {
+      content: '✓';
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 20px;
+      height: 20px;
+      min-width: 20px;
+      background: linear-gradient(135deg, #1565c0, #00c2ff);
+      color: #fff;
+      border-radius: 50%;
+      font-size: 11px;
+      font-weight: 700;
+    }
+    .about-cta-premium {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+    .about-cta-premium .btn-blue {
+      background: linear-gradient(135deg, #1565c0, #00c2ff);
+      color: #fff;
+      padding: 12px 26px;
+      border-radius: 30px;
+      font-weight: 700;
+      font-size: 14px;
+      text-decoration: none;
+      transition: all 0.2s;
+      box-shadow: 0 4px 14px rgba(21,101,192,0.28);
+    }
+    .about-cta-premium .btn-blue:hover { transform: translateY(-2px); box-shadow: 0 8px 20px rgba(21,101,192,0.35); }
+    .about-cta-premium .btn-border {
+      background: transparent;
+      color: #1565c0;
+      border: 2px solid #c8ddf5;
+      padding: 11px 26px;
+      border-radius: 30px;
+      font-weight: 700;
+      font-size: 14px;
+      text-decoration: none;
+      transition: all 0.2s;
+    }
+    .about-cta-premium .btn-border:hover { border-color: #1565c0; background: #f0f8ff; }
+
+    /* Hide the original about-container so we can replace visually */
+    .about-container { display: none !important; }
+
+    /* ── Why Choose Us strip (between about & services) ── */
+    .home-why-strip {
+      background: linear-gradient(135deg, #0a2a5e 0%, #1565c0 55%, #00c2ff 100%);
+      padding: 44px 24px;
+    }
+    .home-why-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 24px;
+      text-align: center;
+    }
+    .home-why-item .why-ico { font-size: 32px; margin-bottom: 10px; }
+    .home-why-item h4 { font-size: 15px; font-weight: 700; color: #fff; margin-bottom: 5px; }
+    .home-why-item p { font-size: 13px; color: rgba(255,255,255,0.78); line-height: 1.5; }
+
+    /* ── Section headings — add subtle eyebrow ── */
+    .home-section-eyebrow {
+      text-align: center;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: #00c2ff;
+      margin-bottom: 4px;
+    }
+
+    /* ── Founder section premium ── */
+    #founder-message {
+      background: linear-gradient(180deg, #f0f8ff 0%, #ffffff 100%);
+    }
+
+    /* ── Map section heading ── */
+    #location h2 { color: #0a2a5e; }
+
+    /* ── CTA banner before footer ── */
+    .home-final-cta {
+      background: linear-gradient(135deg, #0a2a5e, #1565c0);
+      padding: 52px 28px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .home-final-cta::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(ellipse at top right, rgba(0,194,255,0.2) 0%, transparent 60%);
+    }
+    .home-final-cta h2 {
+      font-size: clamp(22px, 3.5vw, 32px);
+      font-weight: 800;
+      color: #fff;
+      margin-bottom: 10px;
+      position: relative;
+    }
+    .home-final-cta p {
+      color: rgba(255,255,255,0.87);
+      max-width: 580px;
+      margin: 0 auto 26px;
+      font-size: 15.5px;
+      line-height: 1.7;
+      position: relative;
+    }
+    .home-final-cta-btns {
+      display: flex;
+      gap: 14px;
+      justify-content: center;
+      flex-wrap: wrap;
+      position: relative;
+    }
+    .hfc-btn-white {
+      background: #fff;
+      color: #1565c0;
+      padding: 13px 30px;
+      border-radius: 30px;
+      font-weight: 700;
+      font-size: 14.5px;
+      text-decoration: none;
+      transition: all 0.2s;
+      display: inline-block;
+    }
+    .hfc-btn-white:hover { background: #f0f8ff; transform: translateY(-2px); }
+    .hfc-btn-wa {
+      background: #25d366;
+      color: #fff;
+      padding: 13px 30px;
+      border-radius: 30px;
+      font-weight: 700;
+      font-size: 14.5px;
+      text-decoration: none;
+      transition: all 0.2s;
+      display: inline-block;
+    }
+    .hfc-btn-wa:hover { background: #1ebe5d; transform: translateY(-2px); }
+  </style>
+</head>
+<body>
+  <!-- Header Section -->
+  <header id="header" class="site-header">
+    <div class="header-inner">
+      
+      <!-- Logo and Address Block -->
+      <div class="logo-and-address">
+        <a href="index.html" class="logo" aria-label="Hi-Tech Pathology Home">
+          <img src="logo.jpeg" alt="Hi-Tech Pathology logo">
+        </a>
+        <div class="address-block">
+          <div class="address">Janakpurdham</div>
+          <div class="address">Hospital Road</div>
+          <div class="address">Dhanusha, Nepal</div>
+        </div>
+      </div>
+      
+      <button id="navToggle" class="nav-toggle" aria-expanded="false" aria-controls="mainNav">
+        <span class="sr-only">Toggle navigation</span> &#9776;
+      </button>
+      <nav id="mainNav" class="main-nav">
+        <ul class="navmenu">
+          <li><a class="active" href="index.html">HOME</a></li>
+          <li><a href="services.html">OUR SERVICES</a></li>
+          <li><a href="about.html">ABOUT US</a></li>
+          <li><a href="book.html">BOOK A TEST</a></li>
+          <li><a href="gallery.html">GALLERY</a></li>
+          <li><a href="contact.html">CONTACT US</a></li>
+          <li><a href="team.html">OUR TEAM</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section with Sliding Images -->
+  <main>
+    <section class="hero" aria-label="Hero - Hi-Tech Pathology">
+      <div class="slider" aria-live="polite">
+        <div class="slides fade" role="group" aria-roledescription="slide" aria-label="Slide 1">
+          <img src="a2.jpeg" alt="Lab working" />
+          <div class="caption">
+            <h1>Welcome to Hi-Tech Pathology</h1>
+            <p>Quality testing, trusted results.</p>
+            <a href="contact.html" class="btn primary">Book Now</a>
+          </div>
+        </div>
+        <div class="slides fade" role="group" aria-roledescription="slide" aria-label="Slide 2">
+          <img src="a4.jpeg" alt="Advanced instruments" />
+          <div class="caption">
+            <h1>Advanced Lab Services</h1>
+            <p>Accuracy you can count on.</p>
+            <a href="services.html" class="btn">Our Services</a>
+          </div>
+        </div>
+        <div class="slides fade" role="group" aria-roledescription="slide" aria-label="Slide 3">
+          <img src="a9.jpg" alt="Booking online" />
+          <div class="caption">
+            <h1>Book Your Test Online</h1>
+            <p>Fast, reliable, and hassle-free.</p>
+            <a href="book.html" class="btn primary">Start Booking</a>
+          </div>
+        </div>
+
+        <!-- Prev/Next -->
+        <button class="prev" aria-label="Previous slide" onclick="plusSlides(-1)">&#10094;</button>
+        <button class="next" aria-label="Next slide" onclick="plusSlides(1)">&#10095;</button>
+      </div>
+
+      <!-- Dots -->
+      <div class="dots" role="tablist" aria-label="Slide buttons">
+        <button class="dot" onclick="currentSlide(1)" aria-label="Slide 1"></button>
+        <button class="dot" onclick="currentSlide(2)" aria-label="Slide 2"></button>
+        <button class="dot" onclick="currentSlide(3)" aria-label="Slide 3"></button>
+      </div>
+    </section>
+
+    <!-- ★ TRUST BAR (NEW) -->
+    <div class="home-trust-bar">
+      <div class="home-trust-item"><span class="ti-icon">✅</span> NHPC Registered Lab</div>
+      <div class="home-trust-item"><span class="ti-icon">🔬</span> World Class Equipment</div>
+      <div class="home-trust-item"><span class="ti-icon">⚡</span> Same Day Reports</div>
+      <div class="home-trust-item"><span class="ti-icon">🏠</span> Home Collection Available</div>
+      <div class="home-trust-item"><span class="ti-icon">💬</span> WhatsApp Booking</div>
+    </div>
+
+    <!-- ★ QUICK ACTIONS (NEW) -->
+    <div class="home-quick-actions">
+      <a href="book.html" class="hqa-btn primary"><span class="btn-ico">📋</span> Book a Test</a>
+      <a href="https://wa.me/9779822382156?text=Hello%2C%20I%20would%20like%20to%20book%20a%20test%20at%20Hi-Tech%20Pathology%20Lab." target="_blank" rel="noopener noreferrer" class="hqa-btn green"><span class="btn-ico">💬</span> WhatsApp Us</a>
+      <a href="tel:+9779822382156" class="hqa-btn outline"><span class="btn-ico">📞</span> Call Now</a>
+      <a href="services.html" class="hqa-btn outline"><span class="btn-ico">🔬</span> Our Services</a>
+    </div>
+
+    <!-- ★ STATS ROW (NEW) -->
+    <div class="home-stats-row" style="max-width:860px;margin:20px auto 0;">
+      <div class="home-stat-item"><div class="num">20+</div><div class="lbl">Years of Service</div></div>
+      <div class="home-stat-item"><div class="num">100+</div><div class="lbl">Tests Available</div></div>
+      <div class="home-stat-item"><div class="num">5</div><div class="lbl">World Class Machines</div></div>
+      <div class="home-stat-item"><div class="num">8+</div><div class="lbl">Expert Professionals</div></div>
+      <div class="home-stat-item"><div class="num">Same Day</div><div class="lbl">Report Delivery</div></div>
+    </div>
+
+    <!-- Packages Ads -->
+    <section id="health-packages">
+
+      <div class="package-header">
+        <h2> Book Your Health Packages</h2>
+        <p>Comprehensive preventive health screening packages designed for every stage of life.</p>
+      </div>
+
+      <div class="package-slider">
+        <div class="package-track">
+
+          <article class="package-card">
+            <span class="package-badge">POPULAR</span>
+            <img src="images/pack1.jpeg" alt="Basic Health Checkup Package">
+            <div class="package-content">
+              <h3>Basic Health Checkup</h3>
+              <p>Comprehensive preventive health screening package for routine monitoring and early detection of health conditions.</p>
+              <a href="book.html" class="package-btn">Book Package →</a>
+            </div>
+          </article>
+
+          <article class="package-card">
+            <span class="package-badge premium">PREMIUM</span>
+            <img src="images/pack2.jpeg" alt="Advanced Health Checkup Package">
+            <div class="package-content">
+              <h3>Advanced Health Checkup</h3>
+              <p>Complete diagnostic package including blood investigations, organ function tests and detailed health assessment.</p>
+              <a href="book.html" class="package-btn">Book Package →</a>
+            </div>
+          </article>
+
+          <!-- Duplicate for seamless loop -->
+          <article class="package-card">
+            <span class="package-badge">POPULAR</span>
+            <img src="images/pack1.jpeg" alt="Basic Health Checkup Package">
+            <div class="package-content">
+              <h3>Basic Health Checkup</h3>
+              <p>Comprehensive preventive health screening package for routine monitoring and early detection of health conditions.</p>
+              <a href="book.html" class="package-btn">Book Package →</a>
+            </div>
+          </article>
+
+          <article class="package-card">
+            <span class="package-badge premium">PREMIUM</span>
+            <img src="images/pack2.jpeg" alt="Advanced Health Checkup Package">
+            <div class="package-content">
+              <h3>Advanced Health Checkup</h3>
+              <p>Complete diagnostic package including blood investigations, organ function tests and detailed health assessment.</p>
+              <a href="book.html" class="package-btn">Book Package →</a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- About Hi-Tech Lab Section — PREMIUM UPGRADE -->
+    <section id="about-lab" class="about-lab">
+      <!-- Original about-container kept but hidden via CSS; premium version below -->
+      <div class="about-container">
+        <div class="about-image">
+          <img src="about.jpeg" alt="Hi-Tech Lab facility">
+        </div>
+        <div class="about-text">
+          <h2>About Hi-Tech Pathology Lab</h2>
+          <p>
+            Hi-Tech Pathology Lab is dedicated to providing accurate and reliable diagnostic services. Equipped with modern instruments and skilled professionals, we ensure timely results and exceptional patient care. Our commitment is to quality, precision, and trust in every test we perform.
+          </p>
+          <div class="about-cta">
+            <a href="services.html" class="btn">Explore Services</a>
+            <a href="contact.html" class="btn outline">Contact Us</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- ★ PREMIUM ABOUT REPLACEMENT (NEW) -->
+      <div class="about-lab-premium">
+
+        <!-- Image side -->
+        <div class="about-img-premium">
+          <img src="about.jpeg" alt="Hi-Tech Lab facility" class="main-img">
+          <div class="about-img-badge">
+            <div class="abnum">20+</div>
+            <div class="ablbl">Years of<br>Trusted Care</div>
+          </div>
+        </div>
+
+        <!-- Text side -->
+        <div class="about-text-premium">
+          <div class="eyebrow">Who We Are</div>
+          <h2>Hi-Tech Pathology Lab Janakpurdham's Most Trusted Diagnostic Centre</h2>
+          <p class="about-desc">
+            Hi-Tech Pathology Lab is dedicated to providing accurate and reliable diagnostic services to the community of Janakpurdham and Dhanusha. Equipped with world-class instruments from Japan, Sweden, and Germany and staffed by NHPC registered professionals. we ensure timely results and exceptional patient care. Our commitment is to quality, precision, and trust in every test we perform.
+          </p>
+          <ul class="about-feat-list">
+            <li>NHPC Registered Professionals</li>
+            <li>World-Class Machines</li>
+            <li>Same-Day Reports</li>
+            <li>Home Sample Collection</li>
+            <li>100+ Diagnostic Tests</li>
+            <li>WhatsApp Report Delivery</li>
+            <li>Free Health Camps</li>
+            <li>Transparent Pricing</li>
+          </ul>
+          <div class="about-cta-premium">
+            <a href="services.html" class="btn-blue">🔬 Explore Services</a>
+            <a href="contact.html" class="btn-border">📞 Contact Us</a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ★ WHY CHOOSE US STRIP (NEW) -->
+    <div class="home-why-strip">
+      <div class="home-why-inner">
+        <div class="home-why-item">
+          <div class="why-ico">🎯</div>
+          <h4>Precision Results</h4>
+          <p>Every test verified through strict quality control you and your doctor can trust.</p>
+        </div>
+        <div class="home-why-item">
+          <div class="why-ico">⚡</div>
+          <h4>Fast Turnaround</h4>
+          <p>Most routine tests reported the same day of sample collection.</p>
+        </div>
+        <div class="home-why-item">
+          <div class="why-ico">🏠</div>
+          <h4>Home Collection</h4>
+          <p>Trained phlebotomists come to you safe, hygienic, and convenient.</p>
+        </div>
+        <div class="home-why-item">
+          <div class="why-ico">📱</div>
+          <h4>Digital Reports</h4>
+          <p>Receive results via WhatsApp or email anytime, anywhere.</p>
+        </div>
+        <div class="home-why-item">
+          <div class="why-ico">💰</div>
+          <h4>Affordable Pricing</h4>
+          <p>No hidden charges. Competitive rates with discounts for partners.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Our Services Section -->
+    <section id="services" class="services">
+      <div class="home-section-eyebrow">What We Offer</div>
+      <h2>Our Services</h2>
+      <div class="service-cards">
+        <article class="service-card">
+          <img src="a1.jpeg" alt="Blood Tests">
+          <h3>Blood Tests</h3>
+          <p>Comprehensive testing with accurate results.</p>
+          <a href="services.html#blood" class="btn sm">Learn more</a>
+        </article>
+        <article class="service-card">
+          <img src="a5.jpg" alt="Urine Analysis">
+          <h3>Urine Analysis</h3>
+          <p>Reliable and quick urine testing services.</p>
+          <a href="services.html#urine" class="btn sm">Learn more</a>
+        </article>
+        <article class="service-card">
+          <img src="a8.jpg" alt="COVID-19 Testing">
+          <h3>COVID-19 Testing</h3>
+          <p>Safe and certified testing for COVID-19.</p>
+          <a href="services.html#covid" class="btn sm">Learn more</a>
+        </article>
+      </div>
+    </section>
+
+    <!-- Our Machines Section -->
+    <section id="machines" class="services">
+      <div class="home-section-eyebrow">Advanced Equipment</div>
+      <h2>Our Machines</h2>
+      <p style="color:var(--muted); max-width:900px; margin:0 auto 20px; text-align:center;">
+        We use world class diagnostic machines to ensure accurate and reliable test results.
+      </p>
+
+      <div class="service-cards" style="max-width:1100px;margin:18px auto;">
+
+        <article class="service-card" id="thyroid-machine">
+          <img src="thyroid.jpeg" alt="Thyroid Testing Machine">
+          <h3>Thyroid &amp; Immunoassay</h3>
+          <p>For thyroid and immunoassay tests, we use Tosoh AiA 360, a world class Japanese analyzer.</p>
+        </article>
+
+        <article class="service-card" id="cbc-machine">
+          <img src="CBC.jpeg" alt="CBC Analyzer">
+          <h3>Complete Blood Count (CBC)</h3>
+          <p>For CBC tests, we use Medonic M Series, a world class Sweden made analyzer.</p>
+        </article>
+
+        <article class="service-card" id="biochemistry-machine">
+          <img src="Liver.jpeg" alt="Biochemistry Analyzer">
+          <h3>Biochemistry Tests</h3>
+          <p>Liver, kidney, and lipid profile tests are performed using Erba Chem 7 &amp; Erba Chem 6, Germany manufactured analyzers.</p>
+        </article>
+
+        <article class="service-card" id="tumor-marker-machine">
+          <img src="tumor.jpeg" alt="Tumor Marker Testing">
+          <h3>Cancer &amp; Tumor Markers</h3>
+          <p>Cancer and tumor marker tests are conducted using Tosoh AiA 360 Immunoassay Analyzer.</p>
+        </article>
+
+        <article class="service-card" id="electrolyte-machine">
+          <img src="electrolytes.jpeg" alt="Electrolyte Analyzer">
+          <h3>Electrolyte Analysis</h3>
+          <p>For electrolyte imbalance testing, we use a Micro Lab Electrolyte Analyzer, a world class Indian manufactured system.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="founder-message">
+      <div class="founder-wrapper">
+        <h2>Founder's Message</h2>
+
+        <div class="founder-profile">
+          <img src="images/founder.jpeg" alt="Founder Mr. Santosh Nirmal">
+          <h3>Mr. Santosh Nirmal</h3>
+          <div class="founder-info">
+            President : (MELAN) Medical Lab Association Of Nepal, Dhanusha<br>
+            Bsc.MLT : Banglore<br>
+            NHPC : A-1156
+          </div>
+        </div>
+
+        <div class="founder-card">
+          <p><strong>Dear Well Wishers,</strong></p>
+          <p>It gives me immense pride and gratitude to share that Hi-Tech Pathology Lab has successfully completed 20 years of dedicated service in healthcare diagnostics.</p>
+          <p>Over the past two decades, our mission has remained unchanged to provide accurate, reliable, and timely diagnostic services while maintaining the highest standards of quality and patient care.</p>
+          <p>At Hi-Tech Pathology Lab, we continuously invest in advanced technology, modern equipment, and skilled professionals to ensure precision and excellence in every test we perform.</p>
+          <p>This 20-year milestone would not have been possible without the trust of our patients, the support of doctors, and the dedication of our staff.</p>
+          <p>As we move forward, we remain committed to innovation, quality, and patient centered care.</p>
+          <p>Thank you for your trust and support.</p>
+          <p><strong>Founder</strong><br>Hi-Tech Pathology Lab</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ★ FINAL CTA BANNER (NEW) -->
+    <div class="home-final-cta">
+      <h2>Ready to Get Your Test Done?</h2>
+      <p>Book online, chat on WhatsApp, or call us fast results, trusted professionals, right here in Janakpurdham.</p>
+      <div class="home-final-cta-btns">
+        <a href="book.html" class="hfc-btn-white">📋 Book a Test</a>
+        <a href="https://wa.me/9779822382156?text=Hello%2C%20I%20would%20like%20to%20book%20a%20test%20at%20Hi-Tech%20Pathology%20Lab." target="_blank" rel="noopener noreferrer" class="hfc-btn-wa">💬 WhatsApp Us</a>
+      </div>
+    </div>
+
+    <!-- Map Section -->
+    <section id="location" class="map-section">
+      <h2>Our Location</h2>
+      <div class="map-container">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d114027.84575902396!2d85.84127032152662!3d26.73256069486557!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x39ec4003d9a9685d%3A0xb20a0a292263104b!2sRang%20Bumi%20Marga%2C%20Janakpur%2045600!3m2!1d26.732584499999998!2d85.9236718!5e0!3m2!1sen!2snp!4v1762801523435!5m2!1sen!2snp"
+         width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </section>
+  </main>
+
+  <!-- Scroll Up Button -->
+  <button id="scrollUpBtn" class="scroll-up" title="Go to bottom" aria-label="Scroll to bottom">&#8681;</button>
+
+  <!-- Footer -->
+  <footer class="ht-footer" id="site-footer">
+    <div class="ht-footer-inner">
+
+      <div class="ht-footer-brand">
+        <div class="ht-brand-row">
+          <img src="logo.jpeg" alt="Hi-Tech Pathology Lab logo">
+          <div class="ht-brand-name">Hi-Tech Pathology Lab<span>Janakpurdham · Nepal</span></div>
+        </div>
+        <p class="ht-footer-tagline">Accurate, reliable diagnostic testing powered by modern technology and 20+ years of trusted patient care.</p>
+        <div class="ht-social">
+          <a href="https://www.facebook.com/share/1Cw8PfNNuD/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" aria-label="Hi-Tech Pathology Lab on Facebook">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 12.06C22 6.51 17.52 2 12 2S2 6.51 2 12.06c0 5 3.66 9.13 8.44 9.94v-7.03H7.9v-2.91h2.54V9.84c0-2.51 1.49-3.89 3.77-3.89 1.09 0 2.23.2 2.23.2v2.46h-1.26c-1.24 0-1.63.78-1.63 1.58v1.87h2.78l-.44 2.91h-2.34V22c4.78-.81 8.44-4.94 8.44-9.94Z"/></svg>
+          </a>
+          <a href="https://www.instagram.com/hitechpathologylab?igsh=eGNydW0zc2ttOWtv" target="_blank" rel="noopener noreferrer" aria-label="Hi-Tech Pathology Lab on Instagram">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5Zm10 2H7a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3Zm-5 3.5A4.5 4.5 0 1 1 7.5 12 4.5 4.5 0 0 1 12 7.5Zm0 2A2.5 2.5 0 1 0 14.5 12 2.5 2.5 0 0 0 12 9.5Zm5.4-3.4a1 1 0 1 1-1 1 1 1 0 0 1 1-1Z"/></svg>
+          </a>
+        </div>
+        <button type="button" class="ht-back-top" onclick="window.scrollTo({top:0,behavior:'smooth'})">&#8679; BACK TO TOP</button>
+      </div>
+
+      <div class="ht-footer-col">
+        <h4>Site Map</h4>
+        <ul>
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="services.html">Our Services</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="book.html">Book a Test</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="team.html">Our Team</a></li>
+        </ul>
+      </div>
+
+      <div class="ht-footer-col">
+        <h4>Get in Touch</h4>
+        <address class="ht-contact-line">Hospital Road, Janakpurdham<br>Dhanusha, Nepal</address>
+        <p class="ht-contact-line"><a href="tel:+9779822382156">+977-9822382156</a></p>
+        <p class="ht-contact-line"><a href="mailto:hplnepal18@gmail.com">hplnepal18@gmail.com</a></p>
+      </div>
+
+    </div>
+
+    <div class="ht-footer-bottom">
+      <p>&copy; 2025 Hi-Tech Pathology Lab. All Rights Reserved.</p>
+      <small>Website by V and S Digital Solutions</small>
+    </div>
+  </footer>
+
+  <!-- Image Lightbox -->
+  <div id="imageModal" class="image-modal">
+    <span class="close-modal">&times;</span>
+    <img class="modal-content" id="modalImg">
+  </div>
+
+  <!-- CHATBOT WIDGET — Hi-Tech Pathology Lab -->
+  <div id="chatbot-window" role="dialog" aria-label="Hi-Tech Lab Assistant" aria-modal="false">
+    <div id="chatbot-head">
+      <div id="chatbot-head-avatar">🔬</div>
+      <div id="chatbot-head-info">
+        <div id="chatbot-head-name">Hi-Tech Lab Assistant</div>
+        <div id="chatbot-head-status">Online — Ready to help</div>
+      </div>
+      <button id="chatbot-close-btn" aria-label="Close chat">✕</button>
+    </div>
+    <div id="chatbot-messages-area" aria-live="polite" aria-label="Chat messages"></div>
+    <div id="chatbot-quick-replies"></div>
+    <div id="chatbot-input-row">
+      <input type="text" id="chatbot-text-input" placeholder="Type your question…" autocomplete="off" aria-label="Type your message" />
+      <button id="chatbot-send-btn" aria-label="Send message">➤</button>
+    </div>
+    <div id="chatbot-powered">Hi-Tech Pathology Lab · Janakpurdham</div>
+  </div>
+
+  <!-- Floating Launcher -->
+  <div id="chatbot-launcher" aria-label="Chat with us">
+    <span id="chatbot-tooltip">💬 Ask us anything!</span>
+    <button id="chatbot-toggle-btn" aria-label="Open chat assistant" aria-expanded="false">💬</button>
+  </div>
+
+  <!-- External Scripts -->
+  <script src="script.js"></script>
+  <script src="chatbot.js"></script>
+</body>
+</html>

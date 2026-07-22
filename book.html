@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Book diagnostic tests online at Hi-Tech Pathology Lab Janakpurdham. Easy online booking for blood tests, urine tests, and health checkups in Nepal.">
+  <meta name="keywords" content="book test online, online lab booking Janakpurdham, book blood test Nepal, pathology lab appointment, health checkup booking">
+  <meta name="author" content="Hi-Tech Pathology Lab">
+  <meta name="robots" content="index, follow">
+  
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:title" content="Book a Test - Hi-Tech Pathology Lab">
+  <meta property="og:description" content="Book your diagnostic test online at Hi-Tech Pathology Lab Janakpurdham. Fast, reliable, and hassle-free booking.">
+  <meta property="og:image" content="./a9.jpg">
+  <meta property="og:url" content="./book.html">
+  <meta property="og:type" content="website">
+  
+  <title>Book a Test Online - Hi-Tech Pathology Lab, Janakpurdham</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="footer-lang.css" />
+
+  <!-- WhatsApp Styles (existing) -->
+  <style>
+    .whatsapp-float {
+      position: fixed;
+      width: 60px;
+      height: 60px;
+      bottom: 30px;
+      right: 30px;
+      background-color: #25d366;
+      color: #FFF;
+      border-radius: 50%;
+      text-align: center;
+      font-size: 36px;
+      line-height: 60px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+      z-index: 1000;
+      text-decoration: none;
+      transition: background-color 0.3s;
+    }
+    .whatsapp-float:hover { background-color: #128C7E; }
+    .whatsapp-float span { display: inline-block; transform: translateY(1px); }
+    .whatsapp-btn {
+      background-color: #25d366 !important;
+      color: white !important;
+      text-align: center;
+      padding: 12px;
+      border-radius: 8px;
+      text-decoration: none;
+      display: block;
+      border: none;
+      cursor: pointer;
+      font-size: 16px;
+      font-weight: bold;
+    }
+    .whatsapp-btn:hover { background-color: #128C7E !important; }
+
+    /* ===== BOOK PAGE PREMIUM ENHANCEMENTS ===== */
+
+    /* Hero */
+    .book-hero {
+      background: linear-gradient(135deg, #0a2a5e 0%, #1565c0 50%, #00c2ff 100%);
+      padding: 52px 28px 38px;
+      text-align: center;
+    }
+    .book-hero h1 { font-size:clamp(24px,4vw,38px); font-weight:800; color:#fff; margin-bottom:10px; }
+    .book-hero h1 span { color:#7dd3fc; }
+    .book-hero p { color:rgba(255,255,255,0.87); max-width:580px; margin:0 auto; font-size:15.5px; line-height:1.7; }
+
+    /* Layout */
+    .book-wrap {
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 44px 24px 60px;
+      display: grid;
+      grid-template-columns: 1fr 340px;
+      gap: 32px;
+      align-items: start;
+    }
+    @media(max-width:768px){ .book-wrap { grid-template-columns:1fr; } }
+
+    /* Form card */
+    .book-form-card {
+      background: #fff;
+      border-radius: 20px;
+      box-shadow: 0 6px 30px rgba(10,40,80,0.1);
+      border: 1px solid rgba(96,176,240,0.15);
+      overflow: hidden;
+    }
+    .book-form-header {
+      background: linear-gradient(135deg, #0a2a5e, #1565c0);
+      padding: 22px 26px;
+    }
+    .book-form-header h2 { font-size:20px; font-weight:800; color:#fff; margin:0 0 4px; }
+    .book-form-header p { font-size:13.5px; color:rgba(255,255,255,0.8); margin:0; }
+    .book-form-body { padding: 26px; }
+
+    /* Form fields */
+    .book-field-group { display:grid; gap:14px; }
+    .book-field label {
+      display:block;
+      font-size:12.5px;
+      font-weight:700;
+      color:#0a2a5e;
+      letter-spacing:0.5px;
+      text-transform:uppercase;
+      margin-bottom:5px;
+    }
+    .book-field input,
+    .book-field select,
+    .book-field textarea {
+      width:100%;
+      padding:11px 14px;
+      border-radius:10px;
+      border:1.5px solid #dde8f5;
+      font-size:14.5px;
+      font-family:inherit;
+      color:#222;
+      background:#fafcff;
+      transition:border 0.2s, box-shadow 0.2s;
+      outline:none;
+      box-sizing:border-box;
+    }
+    .book-field input:focus,
+    .book-field select:focus,
+    .book-field textarea:focus {
+      border-color: #60b0f0;
+      box-shadow: 0 0 0 3px rgba(96,176,240,0.15);
+      background:#fff;
+    }
+    .book-field textarea { resize:vertical; min-height:90px; }
+
+    /* Divider */
+    .book-divider {
+      display:flex;
+      align-items:center;
+      gap:12px;
+      margin:18px 0 16px;
+      color:#aaa;
+      font-size:13px;
+      font-weight:600;
+    }
+    .book-divider::before,
+    .book-divider::after {
+      content:'';
+      flex:1;
+      height:1px;
+      background:#e5eef7;
+    }
+
+    /* Action buttons */
+    .book-actions { display:grid; gap:11px; margin-top:6px; }
+    .book-btn-send {
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      gap:9px;
+      background: linear-gradient(135deg, #25d366, #1ebe5d);
+      color:#fff;
+      border:none;
+      border-radius:12px;
+      padding:14px 20px;
+      font-size:15px;
+      font-weight:700;
+      font-family:inherit;
+      cursor:pointer;
+      text-decoration:none;
+      transition:all 0.2s;
+      width:100%;
+      box-shadow:0 4px 14px rgba(37,211,102,0.3);
+    }
+    .book-btn-send:hover { background:linear-gradient(135deg,#1ebe5d,#17a84f); transform:translateY(-2px); box-shadow:0 8px 20px rgba(37,211,102,0.35); }
+    .book-btn-wa-direct {
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      gap:9px;
+      background:#fff;
+      color:#0a2a5e;
+      border:2px solid #dde8f5;
+      border-radius:12px;
+      padding:13px 20px;
+      font-size:14px;
+      font-weight:700;
+      font-family:inherit;
+      cursor:pointer;
+      text-decoration:none;
+      transition:all 0.2s;
+      width:100%;
+    }
+    .book-btn-wa-direct:hover { border-color:#25d366; color:#1ebe5d; background:#f0fff6; }
+    .book-btn-icon { font-size:20px; line-height:1; }
+
+    /* Info note */
+    .book-note {
+      background:#f0f8ff;
+      border-left:4px solid #60b0f0;
+      border-radius:0 10px 10px 0;
+      padding:10px 14px;
+      font-size:12.5px;
+      color:#555;
+      margin-top:14px;
+      line-height:1.55;
+    }
+
+    /* Sidebar */
+    .book-sidebar { display:flex; flex-direction:column; gap:18px; }
+
+    .book-info-card {
+      background:#fff;
+      border-radius:18px;
+      box-shadow:0 4px 20px rgba(10,40,80,0.08);
+      border:1px solid rgba(96,176,240,0.13);
+      overflow:hidden;
+    }
+    .book-info-header {
+      background:linear-gradient(135deg,#0a2a5e,#1565c0);
+      padding:16px 20px;
+      font-size:14px;
+      font-weight:700;
+      color:#fff;
+    }
+    .book-info-body { padding:18px 20px; }
+    .book-info-row {
+      display:flex;
+      align-items:flex-start;
+      gap:10px;
+      margin-bottom:14px;
+      font-size:13.5px;
+      color:#444;
+      line-height:1.5;
+    }
+    .book-info-row:last-child { margin-bottom:0; }
+    .book-info-row .ico { font-size:18px; min-width:24px; }
+    .book-info-row a { color:var(--accent); text-decoration:none; font-weight:600; }
+    .book-info-row a:hover { text-decoration:underline; }
+
+    .book-wa-card {
+      background:linear-gradient(135deg,#25d366,#1ebe5d);
+      border-radius:18px;
+      padding:24px 22px;
+      text-align:center;
+      box-shadow:0 6px 24px rgba(37,211,102,0.25);
+    }
+    .book-wa-card .wa-ico { font-size:38px; margin-bottom:10px; }
+    .book-wa-card h3 { font-size:16px; font-weight:800; color:#fff; margin-bottom:6px; }
+    .book-wa-card p { font-size:13px; color:rgba(255,255,255,0.9); margin-bottom:14px; line-height:1.5; }
+    .book-wa-card a {
+      display:inline-block;
+      background:#fff;
+      color:#1ebe5d;
+      font-weight:700;
+      font-size:14px;
+      padding:10px 22px;
+      border-radius:30px;
+      text-decoration:none;
+      transition:all 0.2s;
+    }
+    .book-wa-card a:hover { background:#f0fff6; transform:translateY(-2px); }
+
+    .book-steps-card {
+      background:#fff;
+      border-radius:18px;
+      box-shadow:0 4px 20px rgba(10,40,80,0.08);
+      border:1px solid rgba(96,176,240,0.13);
+      padding:20px;
+    }
+    .book-steps-card h3 { font-size:14px; font-weight:800; color:#0a2a5e; margin-bottom:14px; }
+    .book-step {
+      display:flex;
+      gap:12px;
+      align-items:flex-start;
+      margin-bottom:13px;
+      font-size:13.5px;
+      color:#555;
+    }
+    .book-step:last-child { margin-bottom:0; }
+    .step-num {
+      min-width:26px;
+      height:26px;
+      background:linear-gradient(135deg,#1565c0,#00c2ff);
+      color:#fff;
+      font-size:12px;
+      font-weight:800;
+      border-radius:50%;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      margin-top:1px;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- header -->
+  <header class="site-header">
+    <div class="header-inner">
+      
+      <!-- Logo and Address Block -->
+      <div class="logo-and-address">
+        <a href="index.html" class="logo">
+          <img src="logo.jpeg" alt="Hi-Tech Pathology Lab logo">
+        </a>
+        <div class="address-block">
+          <div class="address">Janakpurdham</div>
+          <div class="address">Hospital Road</div>
+          <div class="address">Dhanusha, Nepal</div>
+        </div>
+      </div>
+      
+      <button id="navToggle" class="nav-toggle">&#9776;</button>
+      <nav id="mainNav" class="main-nav">
+        <ul class="navmenu">
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="services.html">OUR SERVICES</a></li>
+          <li><a href="about.html">ABOUT US</a></li>
+          <li><a class="active" href="book.html">BOOK A TEST</a></li>
+          <li><a href="gallery.html">GALLERY</a></li>
+          <li><a href="contact.html">CONTACT US</a></li>
+          <li><a href="team.html">OUR TEAM</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main style="margin-top:88px; padding:0;">
+
+    <!-- Hero -->
+    <div class="book-hero">
+      <h1>Book a <span>Diagnostic Test</span></h1>
+      <p>Fill in your details below and send directly via WhatsApp or chat with us instantly. Fast, simple, and hassle free.</p>
+    </div>
+
+    <!-- Main content -->
+    <div class="book-wrap">
+
+      <!-- FORM CARD -->
+      <div class="book-form-card">
+        <div class="book-form-header">
+          <h2>📋 Fill Your Booking Details</h2>
+          <p>Complete the form, then choose how to send it to us</p>
+        </div>
+        <div class="book-form-body">
+          <div class="book-field-group">
+
+            <div class="book-field">
+              <label for="bk-name">Full Name *</label>
+              <input type="text" id="bk-name" placeholder="e.g. Ram Prasad Sharma" required>
+            </div>
+
+            <div class="book-field">
+              <label for="bk-phone">Phone Number *</label>
+              <input type="tel" id="bk-phone" placeholder="e.g. 9800000000" required>
+            </div>
+
+            <div class="book-field">
+              <label for="bk-email">Email (optional)</label>
+              <input type="email" id="bk-email" placeholder="your@email.com">
+            </div>
+
+            <div class="book-field">
+              <label for="bk-test">Select Test *</label>
+              <select id="bk-test">
+                <option value="">— Choose a test —</option>
+                <option>Basic Health Checkup Package</option>
+                <option>Advanced Health Checkup Package</option>
+                <option>Blood Test</option>
+                <option>Urine Analysis</option>
+                <option>Thyroid Test</option>
+                <option>Complete Blood Count (CBC)</option>
+                <option>Liver Function Test</option>
+                <option>Kidney Function Test</option>
+                <option>Sugar / Diabetes Test</option>
+                <option>COVID-19 Test</option>
+                <option>Lipid Profile</option>
+                <option>Cancer / Tumor Markers</option>
+                <option>Electrolyte Analysis</option>
+                <option>Other (mention in notes)</option>
+              </select>
+            </div>
+
+            <div class="book-field">
+              <label for="bk-date">Preferred Date</label>
+              <input type="date" id="bk-date">
+            </div>
+
+            <div class="book-field">
+              <label for="bk-home">Home Collection?</label>
+              <select id="bk-home">
+                <option value="No">No — I will visit the lab</option>
+                <option value="Yes">Yes — Please send to my address</option>
+              </select>
+            </div>
+
+            <div class="book-field">
+              <label for="bk-notes">Additional Notes</label>
+              <textarea id="bk-notes" placeholder="Any special instructions, doctor's referral, or questions..."></textarea>
+            </div>
+
+          </div>
+
+          <!-- Divider -->
+          <div class="book-divider">Choose how to send</div>
+
+          <!-- Action Buttons -->
+          <div class="book-actions">
+            <!-- SEND FORM VIA WHATSAPP -->
+            <button class="book-btn-send" onclick="sendFormViaWhatsApp()">
+              <span class="book-btn-icon">💬</span>
+              Send Form Details via WhatsApp
+            </button>
+
+            <!-- BOOK DIRECTLY VIA WHATSAPP -->
+            <a href="https://wa.me/9779822382156?text=Hello%2C%20I%20would%20like%20to%20book%20a%20test%20at%20Hi-Tech%20Pathology%20Lab%20Janakpurdham.%20Please%20assist%20me."
+               class="book-btn-wa-direct"
+               target="_blank"
+               rel="noopener noreferrer">
+              <span class="book-btn-icon">📞</span>
+              Book Directly via WhatsApp Chat
+            </a>
+          </div>
+
+          <div class="book-note">
+            💡 <strong>Send Form Details</strong> fills in all your form info automatically into WhatsApp message.<br>
+            💡 <strong>Book Directly</strong> opens a blank WhatsApp chat so you can describe your needs yourself.
+          </div>
+
+        </div>
+      </div>
+
+      <!-- SIDEBAR -->
+      <div class="book-sidebar">
+
+        <!-- WhatsApp card -->
+        <div class="book-wa-card">
+          <div class="wa-ico">💬</div>
+          <h3>Quick WhatsApp Booking</h3>
+          <p>Skip the form — chat directly with our team on WhatsApp right now.</p>
+          <a href="https://wa.me/9779822382156?text=Hello%2C%20I%20would%20like%20to%20book%20a%20test%20at%20Hi-Tech%20Pathology%20Lab." target="_blank" rel="noopener noreferrer">
+            Open WhatsApp →
+          </a>
+        </div>
+
+        <!-- Contact info -->
+        <div class="book-info-card">
+          <div class="book-info-header">📍 Lab Information</div>
+          <div class="book-info-body">
+            <div class="book-info-row">
+              <span class="ico">📌</span>
+              <span>Hospital Road, Janakpurdham, Dhanusha, Nepal</span>
+            </div>
+            <div class="book-info-row">
+              <span class="ico">📞</span>
+              <span><a href="tel:+9779822382156">+977-9822382156</a></span>
+            </div>
+            <div class="book-info-row">
+              <span class="ico">✉️</span>
+              <span><a href="mailto:hplnepal18@gmail.com">hplnepal18@gmail.com</a></span>
+            </div>
+            <div class="book-info-row">
+              <span class="ico">🕐</span>
+              <span>Open daily — early morning to evening</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- How it works -->
+        <div class="book-steps-card">
+          <h3>How Booking Works</h3>
+          <div class="book-step">
+            <span class="step-num">1</span>
+            <span>Fill in your name, phone, and select your test above</span>
+          </div>
+          <div class="book-step">
+            <span class="step-num">2</span>
+            <span>Tap <strong>"Send Form Details via WhatsApp"</strong> your info goes straight to our team</span>
+          </div>
+          <div class="book-step">
+            <span class="step-num">3</span>
+            <span>Our team confirms your appointment and timing</span>
+          </div>
+          <div class="book-step">
+            <span class="step-num">4</span>
+            <span>Visit the lab or request home collection get your report fast!</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </main>
+
+  <footer class="ht-footer" id="site-footer">
+    <div class="ht-footer-inner">
+
+      <div class="ht-footer-brand">
+        <div class="ht-brand-row">
+          <img src="logo.jpeg" alt="Hi-Tech Pathology Lab logo">
+          <div class="ht-brand-name">Hi-Tech Pathology Lab<span>Janakpurdham · Nepal</span></div>
+        </div>
+        <p class="ht-footer-tagline">Accurate, reliable diagnostic testing powered by modern technology and 20+ years of trusted patient care.</p>
+        <div class="ht-social">
+          <a href="https://www.facebook.com/share/1Cw8PfNNuD/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" aria-label="Hi-Tech Pathology Lab on Facebook">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 12.06C22 6.51 17.52 2 12 2S2 6.51 2 12.06c0 5 3.66 9.13 8.44 9.94v-7.03H7.9v-2.91h2.54V9.84c0-2.51 1.49-3.89 3.77-3.89 1.09 0 2.23.2 2.23.2v2.46h-1.26c-1.24 0-1.63.78-1.63 1.58v1.87h2.78l-.44 2.91h-2.34V22c4.78-.81 8.44-4.94 8.44-9.94Z"/></svg>
+          </a>
+          <a href="https://www.instagram.com/hitechpathologylab?igsh=eGNydW0zc2ttOWtv" target="_blank" rel="noopener noreferrer" aria-label="Hi-Tech Pathology Lab on Instagram">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5Zm10 2H7a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3Zm-5 3.5A4.5 4.5 0 1 1 7.5 12 4.5 4.5 0 0 1 12 7.5Zm0 2A2.5 2.5 0 1 0 14.5 12 2.5 2.5 0 0 0 12 9.5Zm5.4-3.4a1 1 0 1 1-1 1 1 1 0 0 1 1-1Z"/></svg>
+          </a>
+        </div>
+        <button type="button" class="ht-back-top" onclick="window.scrollTo({top:0,behavior:'smooth'})">&#8679; BACK TO TOP</button>
+      </div>
+
+      <div class="ht-footer-col">
+        <h4>Site Map</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Our Services</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="book.html" class="active">Book a Test</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="team.html">Our Team</a></li>
+        </ul>
+      </div>
+
+      <div class="ht-footer-col">
+        <h4>Get in Touch</h4>
+        <address class="ht-contact-line">Hospital Road, Janakpurdham<br>Dhanusha, Nepal</address>
+        <p class="ht-contact-line"><a href="tel:+9779822382156">+977-9822382156</a></p>
+        <p class="ht-contact-line"><a href="mailto:hplnepal18@gmail.com">hplnepal18@gmail.com</a></p>
+      </div>
+
+    </div>
+
+    <div class="ht-footer-bottom">
+      <p>&copy; 2025 Hi-Tech Pathology Lab. All Rights Reserved.</p>
+      <small>Website by V and S Digital Solutions</small>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp Button -->
+  <a href="https://wa.me/9779822382156"
+     class="whatsapp-float"
+     target="_blank"
+     aria-label="Chat with us on WhatsApp">
+    <span>&#128222;</span>
+  </a>
+
+  <script src="script.js"></script>
+  <script>
+    function sendFormViaWhatsApp() {
+      var name    = document.getElementById('bk-name').value.trim();
+      var phone   = document.getElementById('bk-phone').value.trim();
+      var email   = document.getElementById('bk-email').value.trim();
+      var test    = document.getElementById('bk-test').value;
+      var date    = document.getElementById('bk-date').value;
+      var home    = document.getElementById('bk-home').value;
+      var notes   = document.getElementById('bk-notes').value.trim();
+
+      if (!name) { alert('Please enter your full name.'); document.getElementById('bk-name').focus(); return; }
+      if (!phone) { alert('Please enter your phone number.'); document.getElementById('bk-phone').focus(); return; }
+      if (!test) { alert('Please select a test.'); document.getElementById('bk-test').focus(); return; }
+
+      var msg = '🏥 *Hi-Tech Pathology Lab — Test Booking*\n\n';
+      msg += '👤 *Name:* ' + name + '\n';
+      msg += '📞 *Phone:* ' + phone + '\n';
+      if (email) msg += '✉️ *Email:* ' + email + '\n';
+      msg += '🔬 *Test:* ' + test + '\n';
+      if (date) msg += '📅 *Preferred Date:* ' + date + '\n';
+      msg += '🏠 *Home Collection:* ' + home + '\n';
+      if (notes) msg += '📝 *Notes:* ' + notes + '\n';
+      msg += '\nPlease confirm my appointment. Thank you!';
+
+      var url = 'https://wa.me/9779822382156?text=' + encodeURIComponent(msg);
+      window.open(url, '_blank');
+    }
+  </script>
+
+</body>
+</html>

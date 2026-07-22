@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="About Hi-Tech Pathology Lab in Janakpurdham, Nepal. Learn about our mission to provide accurate diagnostic services with experienced professionals and modern equipment.">
+  <meta name="keywords" content="about pathology lab, Janakpurdham medical lab, diagnostic services Nepal, lab mission, healthcare Dhanusha">
+  <meta name="author" content="Hi-Tech Pathology Lab">
+  <meta name="robots" content="index, follow">
+  
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:title" content="About Us - Hi-Tech Pathology Lab">
+  <meta property="og:description" content="Learn about Hi-Tech Pathology Lab's mission to bring accurate and timely diagnostics to Janakpurdham community.">
+  <meta property="og:image" content="./logo.jpeg">
+  <meta property="og:url" content="./about.html">
+  <meta property="og:type" content="website">
+  
+  <title>About Us - Hi-Tech Pathology Lab, Janakpurdham</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="footer-lang.css" />
+
+  <style>
+    /* ===== ABOUT PAGE PREMIUM STYLES ===== */
+
+    /* Hero Banner */
+    .about-hero {
+      background: linear-gradient(135deg, #0a2a5e 0%, #1565c0 45%, #00c2ff 100%);
+      padding: 80px 28px 60px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .about-hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.04'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    }
+    .about-hero-badge {
+      display: inline-block;
+      background: rgba(255,255,255,0.15);
+      border: 1px solid rgba(255,255,255,0.3);
+      color: #fff;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      padding: 6px 18px;
+      border-radius: 30px;
+      margin-bottom: 18px;
+      backdrop-filter: blur(4px);
+    }
+    .about-hero h1 {
+      font-size: clamp(28px, 5vw, 48px);
+      font-weight: 800;
+      color: #fff;
+      margin-bottom: 16px;
+      line-height: 1.2;
+      position: relative;
+    }
+    .about-hero h1 span {
+      color: #7dd3fc;
+    }
+    .about-hero p {
+      font-size: 17px;
+      color: rgba(255,255,255,0.85);
+      max-width: 620px;
+      margin: 0 auto 30px;
+      line-height: 1.7;
+      position: relative;
+    }
+    .about-hero-stats {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      flex-wrap: wrap;
+      position: relative;
+    }
+    .about-hero-stat {
+      text-align: center;
+    }
+    .about-hero-stat .num {
+      font-size: 34px;
+      font-weight: 800;
+      color: #fff;
+      line-height: 1;
+    }
+    .about-hero-stat .label {
+      font-size: 12px;
+      color: rgba(255,255,255,0.7);
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-top: 4px;
+    }
+
+    /* Section wrapper */
+    .about-wrap {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    /* Mission + Image split */
+    .about-split {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 56px;
+      align-items: center;
+      padding: 70px 0 50px;
+    }
+    @media(max-width:768px){ .about-split { grid-template-columns:1fr; gap:32px; padding:40px 0; } }
+    .about-split-img {
+      position: relative;
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 20px 60px rgba(0,0,0,0.15);
+    }
+    .about-split-img img {
+      width: 100%;
+      height: 380px;
+      object-fit: cover;
+      display: block;
+    }
+    .about-split-img .img-badge {
+      position: absolute;
+      bottom: 20px;
+      left: 20px;
+      background: linear-gradient(135deg, #1565c0, #00c2ff);
+      color: #fff;
+      padding: 10px 18px;
+      border-radius: 12px;
+      font-size: 13px;
+      font-weight: 700;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.25);
+    }
+    .about-split-text .section-eyebrow {
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--accent-2);
+      margin-bottom: 10px;
+    }
+    .about-split-text h2 {
+      font-size: clamp(24px, 3vw, 34px);
+      font-weight: 800;
+      color: #0a2a5e;
+      line-height: 1.25;
+      margin-bottom: 18px;
+    }
+    .about-split-text p {
+      color: #555;
+      line-height: 1.8;
+      font-size: 15.5px;
+      margin-bottom: 14px;
+    }
+    .about-check-list {
+      list-style: none;
+      margin-top: 18px;
+    }
+    .about-check-list li {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      font-size: 15px;
+      color: #444;
+      margin-bottom: 10px;
+    }
+    .about-check-list li::before {
+      content: '✓';
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 22px;
+      height: 22px;
+      min-width: 22px;
+      background: linear-gradient(135deg, #1565c0, #00c2ff);
+      color: #fff;
+      border-radius: 50%;
+      font-size: 12px;
+      font-weight: 700;
+      margin-top: 1px;
+    }
+
+    /* Values Cards */
+    .values-section {
+      padding: 60px 0;
+      background: linear-gradient(180deg, #f0f8ff 0%, #ffffff 100%);
+      margin: 0 -24px;
+      padding-left: 24px;
+      padding-right: 24px;
+    }
+    .values-header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    .values-header .eyebrow {
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--accent-2);
+      margin-bottom: 10px;
+    }
+    .values-header h2 {
+      font-size: clamp(22px, 3vw, 32px);
+      font-weight: 800;
+      color: #0a2a5e;
+    }
+    .values-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 22px;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+    .value-card {
+      background: #fff;
+      border-radius: 18px;
+      padding: 30px 24px;
+      box-shadow: 0 4px 24px rgba(10,40,80,0.07);
+      border: 1px solid rgba(96,176,240,0.15);
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .value-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 40px rgba(10,40,80,0.13);
+    }
+    .value-icon {
+      width: 52px;
+      height: 52px;
+      background: linear-gradient(135deg, #dbeafe, #bfdbfe);
+      border-radius: 14px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 24px;
+      margin-bottom: 16px;
+    }
+    .value-card h3 {
+      font-size: 17px;
+      font-weight: 700;
+      color: #0a2a5e;
+      margin-bottom: 8px;
+    }
+    .value-card p {
+      font-size: 14px;
+      color: #666;
+      line-height: 1.6;
+    }
+
+    /* Vision / Mission */
+    .vm-section {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 28px;
+      padding: 60px 0;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+    @media(max-width:640px){ .vm-section { grid-template-columns:1fr; } }
+    .vm-card {
+      border-radius: 20px;
+      padding: 36px 32px;
+      position: relative;
+      overflow: hidden;
+    }
+    .vm-card.vision {
+      background: linear-gradient(135deg, #0a2a5e, #1565c0);
+      color: #fff;
+    }
+    .vm-card.mission {
+      background: linear-gradient(135deg, #00c2ff, #60b0f0);
+      color: #fff;
+    }
+    .vm-card .vm-label {
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 2.5px;
+      text-transform: uppercase;
+      opacity: 0.7;
+      margin-bottom: 12px;
+    }
+    .vm-card h3 {
+      font-size: 22px;
+      font-weight: 800;
+      margin-bottom: 14px;
+    }
+    .vm-card p {
+      font-size: 15px;
+      line-height: 1.7;
+      opacity: 0.9;
+    }
+    .vm-card .vm-deco {
+      position: absolute;
+      right: -20px;
+      bottom: -20px;
+      font-size: 100px;
+      opacity: 0.08;
+    }
+
+    /* Why Choose Us */
+    .why-section {
+      padding: 60px 0 70px;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+    .why-header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    .why-header .eyebrow {
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--accent-2);
+      margin-bottom: 10px;
+    }
+    .why-header h2 {
+      font-size: clamp(22px, 3vw, 32px);
+      font-weight: 800;
+      color: #0a2a5e;
+    }
+    .why-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 22px;
+    }
+    .why-item {
+      display: flex;
+      gap: 16px;
+      align-items: flex-start;
+      background: #fff;
+      border-radius: 16px;
+      padding: 24px 22px;
+      box-shadow: 0 2px 16px rgba(10,40,80,0.06);
+      border-left: 4px solid var(--accent);
+    }
+    .why-item .wi-icon {
+      font-size: 28px;
+      min-width: 44px;
+    }
+    .why-item h4 {
+      font-size: 15px;
+      font-weight: 700;
+      color: #0a2a5e;
+      margin-bottom: 5px;
+    }
+    .why-item p {
+      font-size: 13.5px;
+      color: #666;
+      line-height: 1.6;
+    }
+
+    /* CTA Banner */
+    .about-cta {
+      background: linear-gradient(135deg, #0a2a5e 0%, #1565c0 60%, #00c2ff 100%);
+      border-radius: 24px;
+      padding: 50px 40px;
+      text-align: center;
+      margin: 0 0 60px;
+      position: relative;
+      overflow: hidden;
+    }
+    .about-cta::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(ellipse at top right, rgba(255,255,255,0.1) 0%, transparent 60%);
+    }
+    .about-cta h2 {
+      font-size: clamp(20px, 3vw, 30px);
+      font-weight: 800;
+      color: #fff;
+      margin-bottom: 12px;
+      position: relative;
+    }
+    .about-cta p {
+      color: rgba(255,255,255,0.85);
+      font-size: 15px;
+      max-width: 560px;
+      margin: 0 auto 24px;
+      position: relative;
+    }
+    .about-cta-btns {
+      display: flex;
+      gap: 14px;
+      justify-content: center;
+      flex-wrap: wrap;
+      position: relative;
+    }
+    .btn-white {
+      background: #fff;
+      color: #1565c0;
+      padding: 12px 28px;
+      border-radius: 30px;
+      font-weight: 700;
+      font-size: 14px;
+      text-decoration: none;
+      transition: all 0.2s;
+    }
+    .btn-white:hover { background: #f0f8ff; transform: translateY(-2px); }
+    .btn-outline-white {
+      background: transparent;
+      color: #fff;
+      border: 2px solid rgba(255,255,255,0.6);
+      padding: 11px 28px;
+      border-radius: 30px;
+      font-weight: 700;
+      font-size: 14px;
+      text-decoration: none;
+      transition: all 0.2s;
+    }
+    .btn-outline-white:hover { background: rgba(255,255,255,0.15); transform: translateY(-2px); }
+  </style>
+</head>
+<body>
+  <!-- header (same as index) -->
+  <header class="site-header">
+    <div class="header-inner">
+      
+      <!-- Logo and Address Block -->
+      <div class="logo-and-address">
+        <a href="index.html" class="logo"><img src="logo.jpeg" alt="Hi-Tech Pathology Lab logo"></a>
+        <div class="address-block">
+          <div class="address">Janakpurdham</div>
+          <div class="address">Hospital Road</div>
+          <div class="address">Dhanusha, Nepal</div>
+        </div>
+      </div>
+      
+      <button id="navToggle" class="nav-toggle">&#9776;</button>
+      <nav id="mainNav" class="main-nav">
+        <ul class="navmenu">
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="services.html">OUR SERVICES</a></li>
+          <li><a class="active" href="about.html">ABOUT US</a></li>
+          <li><a href="book.html">BOOK A TEST</a></li>
+          <li><a href="gallery.html">GALLERY</a></li>
+          <li><a href="contact.html">CONTACT US</a></li>
+          <li><a href="team.html">OUR TEAM</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main style="margin-top:88px;">
+
+    <!-- HERO BANNER -->
+    <div class="about-hero">
+      <div class="about-hero-badge">🏥 Trusted Since 2000+</div>
+      <h1>About <span>Hi-Tech Pathology Lab</span></h1>
+      <p>Bringing precision diagnostics and compassionate care to the heart of Janakpurdham equipped with modern technology and guided by 20+ years of trusted experience.</p>
+      <div class="about-hero-stats">
+        <div class="about-hero-stat">
+          <div class="num">20+</div>
+          <div class="label">Years of Service</div>
+        </div>
+        <div class="about-hero-stat">
+          <div class="num">100+</div>
+          <div class="label">Tests Available</div>
+        </div>
+        <div class="about-hero-stat">
+          <div class="num">8+</div>
+          <div class="label">Expert Staff</div>
+        </div>
+        <div class="about-hero-stat">
+          <div class="num">1000s</div>
+          <div class="label">Patients Served</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- MISSION SPLIT SECTION -->
+    <div class="about-wrap">
+      <div class="about-split">
+        <div class="about-split-img">
+          <img src="images/about.jpeg" alt="Hi-Tech Pathology Lab facility in Janakpurdham">
+          <div class="img-badge">✦ Modern Facility, Janakpurdham</div>
+        </div>
+        <div class="about-split-text">
+          <div class="section-eyebrow">Who We Are</div>
+          <h2>Accurate Diagnostics, Compassionate Care</h2>
+          <p>Hi-Tech Pathology Lab was founded with a single mission to bring accurate, timely, and affordable diagnostic services to the people of Janakpurdham and the wider Dhanusha district of Nepal.</p>
+          <p>We combine highly qualified medical professionals with modern diagnostic equipment to ensure every patient receives results they can trust quickly and reliably.</p>
+          <ul class="about-check-list">
+            <li>NHPC registered lab technicians &amp; professionals</li>
+            <li>Modern equipment with regular quality checks</li>
+            <li>Fast turnaround most reports same day</li>
+            <li>Affordable pricing with home collection available</li>
+            <li>Free health camps &amp; community outreach programs</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- CORE VALUES -->
+    <div class="values-section">
+      <div class="values-header">
+        <div class="eyebrow">What Drives Us</div>
+        <h2>Our Core Values</h2>
+      </div>
+      <div class="values-grid" style="max-width:1100px;margin:0 auto;">
+        <div class="value-card">
+          <div class="value-icon">🎯</div>
+          <h3>Precision &amp; Accuracy</h3>
+          <p>Every test result we deliver is verified through strict quality control processes, ensuring you and your doctor can trust the data.</p>
+        </div>
+        <div class="value-card">
+          <div class="value-icon">⚡</div>
+          <h3>Speed &amp; Efficiency</h3>
+          <p>We understand that timely results matter. Most routine tests are processed and reported the same day of collection.</p>
+        </div>
+        <div class="value-card">
+          <div class="value-icon">🤝</div>
+          <h3>Patient-First Approach</h3>
+          <p>From booking to report delivery, we treat every patient with respect, empathy, and clear communication at every step.</p>
+        </div>
+        <div class="value-card">
+          <div class="value-icon">🌱</div>
+          <h3>Community Commitment</h3>
+          <p>We actively run free health camps, partner with organizations, and offer discounts to serve the broader Janakpurdham community.</p>
+        </div>
+        <div class="value-card">
+          <div class="value-icon">🔬</div>
+          <h3>Modern Technology</h3>
+          <p>Our lab is equipped with up-to-date diagnostic instruments to handle a wide range of tests with high sensitivity and specificity.</p>
+        </div>
+        <div class="value-card">
+          <div class="value-icon">🛡️</div>
+          <h3>Trusted &amp; Registered</h3>
+          <p>All our professionals hold valid NHPC registrations, and our lab adheres to Nepal's medical diagnostic quality standards.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- VISION & MISSION -->
+    <div class="about-wrap">
+      <div class="vm-section">
+        <div class="vm-card vision">
+          <div class="vm-label">Our Vision</div>
+          <h3>A Healthier Janakpurdham</h3>
+          <p>To be the most trusted diagnostic partner in the Madhesh Province — making accurate health information accessible to every family, regardless of economic background.</p>
+          <div class="vm-deco">👁</div>
+        </div>
+        <div class="vm-card mission">
+          <div class="vm-label">Our Mission</div>
+          <h3>Diagnostics That Make a Difference</h3>
+          <p>To deliver timely, accurate, and affordable diagnostic testing through qualified professionals and modern technology — helping physicians and patients make informed healthcare decisions.</p>
+          <div class="vm-deco">🎯</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- WHY CHOOSE US -->
+    <div class="about-wrap">
+      <div class="why-section">
+        <div class="why-header">
+          <div class="eyebrow">Why Hi-Tech Pathology Lab</div>
+          <h2>The Difference You'll Notice</h2>
+        </div>
+        <div class="why-grid">
+          <div class="why-item">
+            <div class="wi-icon">📋</div>
+            <div>
+              <h4>100+ Diagnostic Tests</h4>
+              <p>From routine blood panels and urinalysis to specialized hormone, thyroid, and tumor marker testing all under one roof.</p>
+            </div>
+          </div>
+          <div class="why-item">
+            <div class="wi-icon">🏠</div>
+            <div>
+              <h4>Home Sample Collection</h4>
+              <p>Can't visit the lab? Our trained phlebotomists come to you safe, hygienic, and convenient home collection service.</p>
+            </div>
+          </div>
+          <div class="why-item">
+            <div class="wi-icon">📱</div>
+            <div>
+              <h4>Digital Report Delivery</h4>
+              <p>Receive your lab reports directly via WhatsApp or email no waiting, no hassle, available anywhere anytime.</p>
+            </div>
+          </div>
+          <div class="why-item">
+            <div class="wi-icon">💰</div>
+            <div>
+              <h4>Transparent Pricing</h4>
+              <p>No hidden charges. We offer competitive, affordable pricing with special discounts for partner organizations and camps.</p>
+            </div>
+          </div>
+          <div class="why-item">
+            <div class="wi-icon">🧑‍⚕️</div>
+            <div>
+              <h4>Qualified &amp; Experienced Team</h4>
+              <p>Led by BMLT Qualified Founder Mr. Santosh Nirmal, our team of CMLT and BSc. MLT professionals ensure every result is reliable.</p>
+            </div>
+          </div>
+          <div class="why-item">
+            <div class="wi-icon">📍</div>
+            <div>
+              <h4>Central Location</h4>
+              <p>Conveniently located on Hospital Road, Janakpurdham easily accessible from all parts of the Dhanusha district.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CTA BANNER -->
+    <div class="about-wrap">
+      <div class="about-cta">
+        <h2>Ready to Get Tested?</h2>
+        <p>Book your diagnostic test today fast results, trusted professionals, and care you can count on right here in Janakpurdham.</p>
+        <div class="about-cta-btns">
+          <a href="book.html" class="btn-white">📋 Book a Test</a>
+          <a href="contact.html" class="btn-outline-white">📞 Contact Us</a>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <footer class="ht-footer" id="site-footer">
+    <div class="ht-footer-inner">
+
+      <div class="ht-footer-brand">
+        <div class="ht-brand-row">
+          <img src="logo.jpeg" alt="Hi-Tech Pathology Lab logo">
+          <div class="ht-brand-name">Hi-Tech Pathology Lab<span>Janakpurdham · Nepal</span></div>
+        </div>
+        <p class="ht-footer-tagline">Accurate, reliable diagnostic testing powered by modern technology and 20+ years of trusted patient care.</p>
+        <div class="ht-social">
+          <a href="https://www.facebook.com/share/1Cw8PfNNuD/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" aria-label="Hi-Tech Pathology Lab on Facebook">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 12.06C22 6.51 17.52 2 12 2S2 6.51 2 12.06c0 5 3.66 9.13 8.44 9.94v-7.03H7.9v-2.91h2.54V9.84c0-2.51 1.49-3.89 3.77-3.89 1.09 0 2.23.2 2.23.2v2.46h-1.26c-1.24 0-1.63.78-1.63 1.58v1.87h2.78l-.44 2.91h-2.34V22c4.78-.81 8.44-4.94 8.44-9.94Z"/></svg>
+          </a>
+          <a href="https://www.instagram.com/hitechpathologylab?igsh=eGNydW0zc2ttOWtv" target="_blank" rel="noopener noreferrer" aria-label="Hi-Tech Pathology Lab on Instagram">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5Zm10 2H7a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3Zm-5 3.5A4.5 4.5 0 1 1 7.5 12 4.5 4.5 0 0 1 12 7.5Zm0 2A2.5 2.5 0 1 0 14.5 12 2.5 2.5 0 0 0 12 9.5Zm5.4-3.4a1 1 0 1 1-1 1 1 1 0 0 1 1-1Z"/></svg>
+          </a>
+        </div>
+        <button type="button" class="ht-back-top" onclick="window.scrollTo({top:0,behavior:'smooth'})">&#8679; BACK TO TOP</button>
+      </div>
+
+      <div class="ht-footer-col">
+        <h4>Site Map</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Our Services</a></li>
+          <li><a href="about.html" class="active">About Us</a></li>
+          <li><a href="book.html">Book a Test</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="team.html">Our Team</a></li>
+        </ul>
+      </div>
+
+      <div class="ht-footer-col">
+        <h4>Get in Touch</h4>
+        <address class="ht-contact-line">Hospital Road, Janakpurdham<br>Dhanusha, Nepal</address>
+        <p class="ht-contact-line"><a href="tel:+9779822382156">+977-9822382156</a></p>
+        <p class="ht-contact-line"><a href="mailto:hplnepal18@gmail.com">hplnepal18@gmail.com</a></p>
+      </div>
+
+    </div>
+
+    <div class="ht-footer-bottom">
+      <p>&copy; 2025 Hi-Tech Pathology Lab. All Rights Reserved.</p>
+      <small>Website by V and S Digital Solutions</small>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

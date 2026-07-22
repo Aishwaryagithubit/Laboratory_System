@@ -1,0 +1,197 @@
+/* ============================================================
+   Hi-Tech Pathology Lab — Footer
+   Additive stylesheet only. Does NOT modify style.css.
+   Uses the same theme variables defined in style.css (:root)
+   so the footer matches the site's blue brand color exactly
+   (same gradient used on the active "HOME" nav highlight).
+============================================================ */
+
+/* ---------- New Footer ---------- */
+.ht-footer{
+  position:relative;
+  margin-top:40px;
+  padding:56px 28px 0;
+  background: linear-gradient(90deg, var(--accent), var(--accent-2));
+  color:#ffffff;
+  isolation:isolate;
+}
+
+/* subtle decorative sheen so the flat blue still feels premium */
+.ht-footer::before{
+  content:"";
+  position:absolute;
+  top:-130px; right:-110px;
+  width:360px; height:360px;
+  background: radial-gradient(circle, rgba(255,255,255,0.25), transparent 70%);
+  pointer-events:none;
+}
+.ht-footer::after{
+  content:"";
+  position:absolute;
+  bottom:-110px; left:-100px;
+  width:280px; height:280px;
+  background: radial-gradient(circle, rgba(255,255,255,0.16), transparent 70%);
+  pointer-events:none;
+}
+
+.ht-footer-inner{
+  position:relative;
+  z-index:1;
+  max-width:var(--container);
+  margin:0 auto;
+  display:grid;
+  grid-template-columns: 1.3fr 1fr 1fr;
+  gap:40px;
+  padding-bottom:36px;
+}
+
+/* Brand column */
+.ht-footer-brand .ht-brand-row{
+  display:flex;
+  align-items:center;
+  gap:12px;
+  margin-bottom:14px;
+}
+.ht-footer-brand .ht-brand-row img{
+  height:48px;
+  width:48px;
+  object-fit:cover;
+  border-radius:10px;
+  border:2px solid rgba(255,255,255,0.9);
+  box-shadow:0 6px 16px rgba(10,30,60,0.35);
+}
+.ht-footer-brand .ht-brand-name{
+  font-size:18px;
+  font-weight:700;
+  color:#ffffff;
+  line-height:1.25;
+  text-shadow:0 1px 2px rgba(10,30,60,0.15);
+}
+.ht-footer-brand .ht-brand-name span{
+  display:block;
+  font-size:11px;
+  font-weight:600;
+  letter-spacing:1px;
+  color:rgba(255,255,255,0.9);
+  text-transform:uppercase;
+  margin-top:2px;
+}
+.ht-footer-tagline{
+  color:rgba(255,255,255,0.95);
+  font-size:14px;
+  line-height:1.7;
+  max-width:340px;
+  margin-bottom:20px;
+}
+
+.ht-social{
+  display:flex;
+  gap:10px;
+  margin-bottom:26px;
+}
+.ht-social a{
+  width:38px; height:38px;
+  border-radius:50%;
+  display:flex; align-items:center; justify-content:center;
+  background:rgba(255,255,255,0.18);
+  border:1px solid rgba(255,255,255,0.45);
+  color:#ffffff;
+  transition:all .2s ease;
+}
+.ht-social a svg{ width:17px; height:17px; fill:currentColor; }
+.ht-social a:hover{
+  background:#ffffff;
+  border-color:#ffffff;
+  color:var(--accent-2);
+  transform:translateY(-3px);
+  box-shadow:0 8px 18px rgba(10,30,60,0.3);
+}
+
+.ht-back-top{
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  border:1.5px solid rgba(255,255,255,0.65);
+  background:transparent;
+  padding:10px 18px;
+  border-radius:30px;
+  color:#ffffff;
+  text-decoration:none;
+  font-size:12px;
+  font-weight:700;
+  letter-spacing:.8px;
+  cursor:pointer;
+  font-family:inherit;
+  transition:all .2s ease;
+}
+.ht-back-top:hover{
+  background:rgba(255,255,255,0.22);
+  border-color:#ffffff;
+  transform:translateY(-2px);
+}
+
+/* Link columns */
+.ht-footer-col h4{
+  font-size:13px;
+  text-transform:uppercase;
+  letter-spacing:1.2px;
+  color:#ffffff;
+  margin-bottom:18px;
+  font-weight:700;
+}
+.ht-footer-col ul{ list-style:none; margin:0; padding:0; }
+.ht-footer-col li{ margin-bottom:11px; }
+.ht-footer-col a{
+  color:rgba(255,255,255,0.9);
+  text-decoration:none;
+  font-size:14px;
+  transition:color .18s ease, padding-left .18s ease;
+}
+.ht-footer-col a:hover{ color:#ffffff; text-decoration:underline; }
+.ht-footer-col a.active{
+  color:#ffffff;
+  font-weight:600;
+  text-decoration:underline;
+}
+
+.ht-footer-col address,
+.ht-footer-col .ht-contact-line{
+  font-style:normal;
+  color:rgba(255,255,255,0.92);
+  font-size:14px;
+  line-height:1.7;
+  margin-bottom:11px;
+}
+.ht-footer-col .ht-contact-line a{ color:rgba(255,255,255,0.92); }
+.ht-footer-col .ht-contact-line a:hover{ color:#fff; text-decoration:underline; }
+
+/* Bottom bar */
+.ht-footer-bottom{
+  position:relative;
+  z-index:1;
+  border-top:1px solid rgba(255,255,255,0.3);
+  padding:18px 28px 22px;
+  text-align:center;
+  font-size:13px;
+  color:rgba(255,255,255,0.9);
+}
+.ht-footer-bottom small{
+  display:block;
+  margin-top:4px;
+  opacity:.85;
+  font-size:11.5px;
+  color:rgba(255,255,255,0.8);
+}
+
+/* Responsive */
+@media (max-width: 860px){
+  .ht-footer-inner{ grid-template-columns: 1fr 1fr; }
+  .ht-footer-brand{ grid-column: 1 / -1; }
+}
+@media (max-width: 600px){
+  .ht-footer{ padding:44px 20px 0; text-align:center; }
+  .ht-footer-inner{ grid-template-columns: 1fr; gap:30px; }
+  .ht-footer-brand .ht-brand-row{ justify-content:center; }
+  .ht-footer-brand .ht-footer-tagline{ margin-left:auto; margin-right:auto; }
+  .ht-social{ justify-content:center; }
+}

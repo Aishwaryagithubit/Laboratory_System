@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Meet our professional team at Hi-Tech Pathology Lab in Janakpurdham, Nepal. Experienced professionals dedicated to providing accurate diagnostic services.">
+  <meta name="keywords" content="pathology lab team, medical professionals, lab technicians, Janakpurdham, Nepal, experienced staff">
+  <meta name="author" content="Hi-Tech Pathology Lab">
+  <meta name="robots" content="index, follow">
+  
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:title" content="Our Team - Hi-Tech Pathology Lab Professionals">
+  <meta property="og:description" content="Meet our professional team at Hi-Tech Pathology Lab in Janakpurdham, Nepal.">
+  <meta property="og:image" content="./santosh_nirmal.jpeg">
+  <meta property="og:url" content="./team.html">
+  <meta property="og:type" content="website">
+  
+  <title>Our Team - Hi-Tech Pathology Lab, Janakpurdham</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="footer-lang.css">
+  
+  <!-- Structured Data Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "AboutPage",
+    "name": "Our Professional Team",
+    "description": "Information about the professional team at Hi-Tech Pathology Lab in Janakpurdham, Nepal.",
+    "url": "./team.html"
+  }
+  </script>
+
+  <style>
+    /* ===== TEAM PAGE PREMIUM ENHANCEMENTS ===== */
+
+    /* Hero strip */
+    .team-hero {
+      background: linear-gradient(135deg, #0a2a5e 0%, #1565c0 50%, #00c2ff 100%);
+      padding: 52px 28px 40px;
+      text-align: center;
+    }
+    .team-hero h1 {
+      font-size: clamp(24px, 4vw, 38px);
+      font-weight: 800;
+      color: #fff;
+      margin-bottom: 10px;
+    }
+    .team-hero p {
+      color: rgba(255,255,255,0.87);
+      max-width: 660px;
+      margin: 0 auto;
+      font-size: 15.5px;
+      line-height: 1.7;
+    }
+
+    /* Team grid wrapper */
+    .team-premium-wrap {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 40px 24px 20px;
+    }
+
+    /* Team grid */
+    .team-premium-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+      gap: 24px;
+    }
+
+    /* Team card */
+    .team-premium-card {
+      background: #fff;
+      border-radius: 18px;
+      overflow: hidden;
+      box-shadow: 0 4px 22px rgba(10,40,80,0.08);
+      border: 1px solid rgba(96,176,240,0.13);
+      transition: transform 0.22s, box-shadow 0.22s;
+      cursor: pointer;
+    }
+    .team-premium-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 14px 40px rgba(10,40,80,0.15);
+    }
+
+    /* Photo wrapper — fixed square */
+    .tpc-photo-wrap {
+      width: 100%;
+      height: 260px;
+      overflow: hidden;
+      position: relative;
+      background: #dbeafe;
+    }
+    .tpc-photo-wrap img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: top center;
+      display: block;
+      transition: transform 0.4s ease;
+    }
+    .team-premium-card:hover .tpc-photo-wrap img {
+      transform: scale(1.05);
+    }
+
+    /* Role badge overlay */
+    .tpc-role-badge {
+      position: absolute;
+      bottom: 10px;
+      left: 10px;
+      background: linear-gradient(135deg, #1565c0, #00c2ff);
+      color: #fff;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+      padding: 4px 12px;
+      border-radius: 20px;
+    }
+
+    /* Card body */
+    .tpc-body {
+      padding: 18px 18px 20px;
+    }
+    .tpc-name {
+      font-size: 16px;
+      font-weight: 800;
+      color: #0a2a5e;
+      margin: 0 0 2px;
+    }
+    .tpc-role {
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--accent);
+      margin: 0 0 10px;
+    }
+    .tpc-info {
+      font-size: 13px;
+      color: #666;
+      line-height: 1.6;
+      margin: 0;
+    }
+    .tpc-info a {
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: 600;
+    }
+    .tpc-info a:hover { text-decoration: underline; }
+
+    /* Commitment Banner */
+    .team-commitment {
+      background: linear-gradient(135deg, #0a2a5e, #1565c0);
+      border-radius: 20px;
+      padding: 44px 36px;
+      margin: 36px 0 60px;
+      text-align: center;
+      color: #fff;
+      position: relative;
+      overflow: hidden;
+    }
+    .team-commitment::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(ellipse at top right, rgba(0,194,255,0.2) 0%, transparent 60%);
+    }
+    .team-commitment h2 {
+      font-size: clamp(20px, 3vw, 28px);
+      font-weight: 800;
+      margin-bottom: 12px;
+      position: relative;
+    }
+    .team-commitment p {
+      max-width: 720px;
+      margin: 0 auto 22px;
+      font-size: 15px;
+      opacity: 0.9;
+      line-height: 1.7;
+      position: relative;
+    }
+    .team-commitment a.btn {
+      background: #fff;
+      color: #1565c0;
+      padding: 12px 30px;
+      border-radius: 30px;
+      font-weight: 700;
+      font-size: 14px;
+      text-decoration: none;
+      display: inline-block;
+      transition: all 0.2s;
+      position: relative;
+    }
+    .team-commitment a.btn:hover { background: #f0f8ff; transform: translateY(-2px); }
+
+    /* Lightbox for team photos */
+    .htl-overlay {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(5,15,35,0.93);
+      z-index: 9999;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+      backdrop-filter: blur(6px);
+    }
+    .htl-overlay.open { display: flex; }
+    .htl-box {
+      position: relative;
+      max-width: 480px;
+      width: 100%;
+      background: #fff;
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 40px 80px rgba(0,0,0,0.5);
+      animation: htlIn 0.22s ease;
+    }
+    @keyframes htlIn {
+      from { opacity:0; transform:scale(0.93); }
+      to   { opacity:1; transform:scale(1); }
+    }
+    .htl-img-wrap {
+      width: 100%;
+      height: 360px;
+      overflow: hidden;
+      background: #0a1a3a;
+    }
+    .htl-img-wrap img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: top center;
+      display: block;
+    }
+    .htl-caption { padding: 18px 22px; background: #fff; }
+    .htl-caption h3 { font-size: 17px; font-weight: 800; color: #0a2a5e; margin: 0 0 3px; }
+    .htl-caption .htl-role { font-size: 13px; font-weight: 600; color: var(--accent); margin-bottom: 8px; }
+    .htl-caption p { font-size: 13px; color: #666; margin: 0; line-height: 1.6; }
+    .htl-caption a { color: var(--accent); text-decoration: none; font-weight: 600; }
+    .htl-close {
+      position: absolute; top: 12px; right: 12px;
+      background: rgba(10,40,80,0.75); color: #fff;
+      border: none; width: 34px; height: 34px; border-radius: 50%;
+      font-size: 18px; cursor: pointer;
+      display: flex; align-items: center; justify-content: center;
+      z-index: 10; transition: background 0.2s;
+    }
+    .htl-close:hover { background: #c0392b; }
+    .htl-nav {
+      position: absolute; top: 50%; transform: translateY(-50%);
+      background: rgba(21,101,192,0.82); color: #fff;
+      border: none; width: 38px; height: 38px; border-radius: 50%;
+      font-size: 18px; cursor: pointer;
+      display: flex; align-items: center; justify-content: center;
+      z-index: 10; transition: background 0.2s;
+    }
+    .htl-nav:hover { background: #1565c0; }
+    .htl-prev { left: 10px; }
+    .htl-next { right: 10px; }
+    .htl-counter {
+      position: absolute; bottom: 0; left: 0; right: 0;
+      text-align: center; padding: 5px;
+      background: rgba(10,40,80,0.55);
+      color: rgba(255,255,255,0.8); font-size: 12px;
+    }
+  </style>
+</head>
+<body>
+  <!-- header (same as index) -->
+  <header class="site-header">
+    <div class="header-inner">
+      
+      <!-- Logo and Address Block -->
+      <div class="logo-and-address">
+        <a href="index.html" class="logo"><img src="logo.jpeg" alt="Hi-Tech Pathology Lab logo"></a>
+        <div class="address-block">
+          <div class="address">Janakpurdham</div>
+          <div class="address">Hospital Road</div>
+          <div class="address">Dhanusha, Nepal</div>
+        </div>
+      </div>
+      
+      <!-- Navigation removed toggle button -->
+      <nav id="mainNav" class="main-nav">
+        <ul class="navmenu">
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="services.html">OUR SERVICES</a></li>
+          <li><a href="about.html">ABOUT US</a></li>
+          <li><a href="book.html">BOOK A TEST</a></li>
+          <li><a href="gallery.html">GALLERY</a></li>
+          <li><a href="contact.html">CONTACT US</a></li>
+          <li><a class="active" href="team.html">OUR TEAM</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="page-content" style="padding:0;">
+
+    <!-- Hero -->
+    <div class="team-hero">
+      <h1>Our Professional Team in Janakpurdham</h1>
+      <p>Meet the dedicated professionals at Hi-Tech Pathology Lab in Janakpurdham, Dhanusha, Nepal. Our experienced team is committed to providing accurate diagnostic services with compassion and expertise.</p>
+    </div>
+
+    <!-- Team Grid -->
+    <div class="team-premium-wrap">
+      <div class="team-premium-grid">
+
+        <!-- Founder -->
+        <div class="team-premium-card" onclick="htlOpen(0)">
+          <div class="tpc-photo-wrap">
+            <img src="santosh_nirmal.jpeg" alt="Founder - Mr. Santosh Nirmal at Hi-Tech Pathology Lab">
+            <span class="tpc-role-badge">Founder</span>
+          </div>
+          <div class="tpc-body">
+            <h3 class="tpc-name">Mr. Santosh Nirmal</h3>
+            <p class="tpc-role">Founder</p>
+            <p class="tpc-info">
+              BMLT (Bangalore, Karnataka)<br>
+              NHPC: A-1156<br>
+              <a href="tel:+9779854024975">+977-9854024975</a>
+            </p>
+          </div>
+        </div>
+
+        <!-- Marketing -->
+        <div class="team-premium-card" onclick="htlOpen(1)">
+          <div class="tpc-photo-wrap">
+            <img src="Om_nirmal.jpeg" alt="Marketing - Mr. Om Nirmal at Hi-Tech Pathology Lab">
+            <span class="tpc-role-badge">Marketing</span>
+          </div>
+          <div class="tpc-body">
+            <h3 class="tpc-name">Mr. Om Nirmal</h3>
+            <p class="tpc-role">Marketing</p>
+            <p class="tpc-info">
+              <a href="tel:+9779822382156">+977-9822382156</a>
+            </p>
+          </div>
+        </div>
+
+        <!-- Lab In-charge -->
+        <div class="team-premium-card" onclick="htlOpen(2)">
+          <div class="tpc-photo-wrap">
+            <img src="Sakil_Sheikh.jpeg" alt="Lab In-charge - Mr. Sakil Sheikh at Hi-Tech Pathology Lab">
+            <span class="tpc-role-badge">Lab In-charge</span>
+          </div>
+          <div class="tpc-body">
+            <h3 class="tpc-name">Mr. Sakil Sheikh</h3>
+            <p class="tpc-role">Lab In-charge</p>
+            <p class="tpc-info">
+              CMLT / BSc. MLT (Dehradun, India)<br>
+              NHPC: A-4129<br>
+              <a href="tel:+9779804863686">+977-9804863686</a>
+            </p>
+          </div>
+        </div>
+
+        <!-- Accountant -->
+        <div class="team-premium-card" onclick="htlOpen(3)">
+          <div class="tpc-photo-wrap">
+            <img src="Binod_adhikari.jpeg" alt="Accountant - Mr. Binod Adhikari at Hi-Tech Pathology Lab">
+            <span class="tpc-role-badge">Accountant</span>
+          </div>
+          <div class="tpc-body">
+            <h3 class="tpc-name">Mr. Binod Adhikari</h3>
+            <p class="tpc-role">Accountant</p>
+            <p class="tpc-info">
+              <a href="tel:+9779809672333">+977-9809672333</a>
+            </p>
+          </div>
+        </div>
+
+        <!-- Lab Assistant -->
+        <div class="team-premium-card" onclick="htlOpen(4)">
+          <div class="tpc-photo-wrap">
+            <img src="Bikash_pandit.jpeg" alt="Lab Assistant - Mr. Bikash Pandit at Hi-Tech Pathology Lab">
+            <span class="tpc-role-badge">Lab Assistant</span>
+          </div>
+          <div class="tpc-body">
+            <h3 class="tpc-name">Mr. Bikash Pandit</h3>
+            <p class="tpc-role">Lab Assistant</p>
+            <p class="tpc-info">
+              <a href="tel:+9779809672333">+977-9809672333</a>
+            </p>
+          </div>
+        </div>
+
+        <!-- Lab Technician 1 -->
+        <div class="team-premium-card" onclick="htlOpen(5)">
+          <div class="tpc-photo-wrap">
+            <img src="Rahul_yadhubanshi.jpeg" alt="Lab Technician - Mr. Rahul Yadhubansi at Hi-Tech Pathology Lab">
+            <span class="tpc-role-badge">Lab Technician</span>
+          </div>
+          <div class="tpc-body">
+            <h3 class="tpc-name">Mr. Rahul Yadhubansi</h3>
+            <p class="tpc-role">Lab Technician</p>
+            <p class="tpc-info">
+              CMLT (Kathmandu)<br>
+              NHPC: B-9464 MLT<br>
+              <a href="tel:+9779762717883">+977-9762717883</a>
+            </p>
+          </div>
+        </div>
+
+        <!-- Lab Technician 2 -->
+        <div class="team-premium-card" onclick="htlOpen(6)">
+          <div class="tpc-photo-wrap">
+            <img src="Dipak_sah.jpeg" alt="Lab Technician - Mr. Dipak Sah at Hi-Tech Pathology Lab">
+            <span class="tpc-role-badge">Lab Technician</span>
+          </div>
+          <div class="tpc-body">
+            <h3 class="tpc-name">Mr. Dipak Sah</h3>
+            <p class="tpc-role">Lab Technician</p>
+            <p class="tpc-info">
+              CMLT<br>
+              <a href="tel:+9779822382156">+977-9822382156</a>
+            </p>
+          </div>
+        </div>
+
+        <!-- Lab Technician 3 -->
+        <div class="team-premium-card" onclick="htlOpen(7)">
+          <div class="tpc-photo-wrap">
+            <img src="Laxmi_kumar.jpeg" alt="Lab Technician - Mr. Laxmi Kumar at Hi-Tech Pathology Lab">
+            <span class="tpc-role-badge">Lab Technician</span>
+          </div>
+          <div class="tpc-body">
+            <h3 class="tpc-name">Mr. Laxmi Kumar</h3>
+            <p class="tpc-role">Lab Technician</p>
+            <p class="tpc-info">
+              CMLT (Janakpurdham)<br>
+              <a href="tel:+9779822382156">+977-9822382156</a>
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Commitment Banner -->
+      <div class="team-commitment">
+        <h2>Our Commitment to Excellence</h2>
+        <p>
+          Every member of our team at Hi-Tech Pathology Lab in Janakpurdham, Dhanusha, Nepal is dedicated to 
+          maintaining the highest standards of accuracy, reliability, and patient care. We continuously pursue 
+          education and training to stay current with advances in diagnostic medicine.
+        </p>
+        <a href="about.html" class="btn">Learn About Our Mission</a>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- LIGHTBOX -->
+  <div class="htl-overlay" id="htlOverlay" onclick="htlBgClose(event)">
+    <div class="htl-box" id="htlBox">
+      <button class="htl-close" onclick="htlClose()" aria-label="Close">&times;</button>
+      <button class="htl-nav htl-prev" onclick="htlNav(-1)" aria-label="Previous">&#8592;</button>
+      <button class="htl-nav htl-next" onclick="htlNav(1)" aria-label="Next">&#8594;</button>
+      <div class="htl-img-wrap">
+        <img id="htlImg" src="" alt="">
+        <div class="htl-counter" id="htlCounter"></div>
+      </div>
+      <div class="htl-caption">
+        <h3 id="htlName"></h3>
+        <div class="htl-role" id="htlRole"></div>
+        <p id="htlInfo"></p>
+      </div>
+    </div>
+  </div>
+
+  <footer class="ht-footer" id="site-footer">
+    <div class="ht-footer-inner">
+
+      <div class="ht-footer-brand">
+        <div class="ht-brand-row">
+          <img src="logo.jpeg" alt="Hi-Tech Pathology Lab logo">
+          <div class="ht-brand-name">Hi-Tech Pathology Lab<span>Janakpurdham · Nepal</span></div>
+        </div>
+        <p class="ht-footer-tagline">Accurate, reliable diagnostic testing powered by modern technology and 20+ years of trusted patient care.</p>
+        <div class="ht-social">
+          <a href="https://www.facebook.com/share/1Cw8PfNNuD/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" aria-label="Hi-Tech Pathology Lab on Facebook">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 12.06C22 6.51 17.52 2 12 2S2 6.51 2 12.06c0 5 3.66 9.13 8.44 9.94v-7.03H7.9v-2.91h2.54V9.84c0-2.51 1.49-3.89 3.77-3.89 1.09 0 2.23.2 2.23.2v2.46h-1.26c-1.24 0-1.63.78-1.63 1.58v1.87h2.78l-.44 2.91h-2.34V22c4.78-.81 8.44-4.94 8.44-9.94Z"/></svg>
+          </a>
+          <a href="https://www.instagram.com/hitechpathologylab?igsh=eGNydW0zc2ttOWtv" target="_blank" rel="noopener noreferrer" aria-label="Hi-Tech Pathology Lab on Instagram">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5Zm10 2H7a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3Zm-5 3.5A4.5 4.5 0 1 1 7.5 12 4.5 4.5 0 0 1 12 7.5Zm0 2A2.5 2.5 0 1 0 14.5 12 2.5 2.5 0 0 0 12 9.5Zm5.4-3.4a1 1 0 1 1-1 1 1 1 0 0 1 1-1Z"/></svg>
+          </a>
+        </div>
+        <button type="button" class="ht-back-top" onclick="window.scrollTo({top:0,behavior:'smooth'})">&#8679; BACK TO TOP</button>
+      </div>
+
+      <div class="ht-footer-col">
+        <h4>Site Map</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Our Services</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="book.html">Book a Test</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="team.html" class="active">Our Team</a></li>
+        </ul>
+      </div>
+
+      <div class="ht-footer-col">
+        <h4>Get in Touch</h4>
+        <address class="ht-contact-line">Hospital Road, Janakpurdham<br>Dhanusha, Nepal</address>
+        <p class="ht-contact-line"><a href="tel:+9779822382156">+977-9822382156</a></p>
+        <p class="ht-contact-line"><a href="mailto:hplnepal18@gmail.com">hplnepal18@gmail.com</a></p>
+      </div>
+
+    </div>
+
+    <div class="ht-footer-bottom">
+      <p>&copy; 2025 Hi-Tech Pathology Lab. All Rights Reserved.</p>
+      <small>Website by V and S Digital Solutions</small>
+    </div>
+  </footer>
+
+  <!-- WhatsApp Floating Button Integration -->
+  <a href="https://wa.me/9779822382156" class="whatsapp-float" target="_blank" aria-label="Chat with us on WhatsApp">
+    <span>&#128222;</span> 
+  </a>
+
+  <script src="script.js"></script>
+  <script>
+    var htlData = [
+      { src:'santosh_nirmal.jpeg', name:'Mr. Santosh Nirmal', role:'Founder', info:'BMLT (Bangalore, Karnataka) · NHPC: A-1156 · +977-9854024975' },
+      { src:'Om_nirmal.jpeg',       name:'Mr. Om Nirmal',       role:'Marketing',      info:'+977-9822382156' },
+      { src:'Sakil_Sheikh.jpeg',    name:'Mr. Sakil Sheikh',    role:'Lab In-charge',  info:'CMLT / BSc. MLT (Dehradun, India) · NHPC: A-4129 · +977-9804863686' },
+      { src:'Binod_adhikari.jpeg',  name:'Mr. Binod Adhikari',  role:'Accountant',     info:'+977-9809672333' },
+      { src:'Bikash_pandit.jpeg',   name:'Mr. Bikash Pandit',   role:'Lab Assistant',  info:'+977-9809672333' },
+      { src:'Rahul_yadhubanshi.jpeg',name:'Mr. Rahul Yadhubansi',role:'Lab Technician',info:'CMLT (Kathmandu) · NHPC: B-9464 MLT · +977-9762717883' },
+      { src:'Dipak_sah.jpeg',       name:'Mr. Dipak Sah',       role:'Lab Technician', info:'CMLT · +977-9822382156' },
+      { src:'Laxmi_kumar.jpeg',     name:'Mr. Laxmi Kumar',     role:'Lab Technician', info:'CMLT (Janakpurdham) · +977-9822382156' }
+    ];
+    var htlCurrent = 0;
+    function htlOpen(idx) {
+      htlCurrent = idx; htlShow();
+      document.getElementById('htlOverlay').classList.add('open');
+      document.body.style.overflow = 'hidden';
+    }
+    function htlShow() {
+      var d = htlData[htlCurrent];
+      document.getElementById('htlImg').src  = d.src;
+      document.getElementById('htlImg').alt  = d.name;
+      document.getElementById('htlName').textContent = d.name;
+      document.getElementById('htlRole').textContent = d.role;
+      document.getElementById('htlInfo').textContent = d.info;
+      document.getElementById('htlCounter').textContent = (htlCurrent+1) + ' / ' + htlData.length;
+    }
+    function htlClose() {
+      document.getElementById('htlOverlay').classList.remove('open');
+      document.body.style.overflow = '';
+    }
+    function htlNav(dir) {
+      htlCurrent = (htlCurrent + dir + htlData.length) % htlData.length;
+      htlShow();
+    }
+    function htlBgClose(e) {
+      if (e.target === document.getElementById('htlOverlay')) htlClose();
+    }
+    document.addEventListener('keydown', function(e) {
+      if (!document.getElementById('htlOverlay').classList.contains('open')) return;
+      if (e.key==='Escape') htlClose();
+      if (e.key==='ArrowLeft') htlNav(-1);
+      if (e.key==='ArrowRight') htlNav(1);
+    });
+  </script>
+</body>
+</html>

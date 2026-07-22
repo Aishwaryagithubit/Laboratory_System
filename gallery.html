@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="View our gallery of Hi-Tech Pathology Lab in Janakpurdham, Nepal. See our modern facilities, equipment, and team at work providing accurate diagnostic services.">
+  <meta name="keywords" content="pathology lab gallery, lab photos, medical laboratory, Janakpurdham, Nepal, lab equipment, facility tour">
+  <meta name="author" content="Hi-Tech Pathology Lab">
+  <meta name="robots" content="index, follow">
+  
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:title" content="Gallery - Hi-Tech Pathology Lab Facilities">
+  <meta property="og:description" content="View our gallery of Hi-Tech Pathology Lab facilities in Janakpurdham, Nepal.">
+  <meta property="og:image" content="./pic1.jpeg">
+  <meta property="og:url" content="./gallery.html">
+  <meta property="og:type" content="website">
+  
+  <title>Gallery - Hi-Tech Pathology Lab, Janakpurdham</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="footer-lang.css">
+  
+  <!-- Structured Data Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "MediaGallery",
+    "name": "Hi-Tech Pathology Lab Gallery",
+    "description": "Photo gallery of Hi-Tech Pathology Lab facilities in Janakpurdham, Nepal.",
+    "url": "./gallery.html"
+  }
+  </script>
+
+  <style>
+    /* ===== GALLERY PREMIUM ENHANCEMENTS ===== */
+
+    /* Gallery hero strip */
+    .gallery-hero {
+      background: linear-gradient(135deg, #0a2a5e 0%, #1565c0 50%, #00c2ff 100%);
+      padding: 52px 28px 40px;
+      text-align: center;
+    }
+    .gallery-hero h1 {
+      font-size: clamp(24px, 4vw, 38px);
+      font-weight: 800;
+      color: #fff;
+      margin-bottom: 10px;
+    }
+    .gallery-hero p {
+      color: rgba(255,255,255,0.85);
+      max-width: 680px;
+      margin: 0 auto;
+      font-size: 15.5px;
+      line-height: 1.7;
+    }
+
+    /* Gallery grid */
+    .gallery-premium-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 22px;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 40px 24px 20px;
+    }
+
+    /* Each gallery card */
+    .gallery-card {
+      background: #fff;
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 4px 20px rgba(10,40,80,0.08);
+      border: 1px solid rgba(96,176,240,0.12);
+      transition: transform 0.22s, box-shadow 0.22s;
+      cursor: pointer;
+    }
+    .gallery-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 14px 40px rgba(10,40,80,0.16);
+    }
+    .gallery-card-img-wrap {
+      position: relative;
+      width: 100%;
+      height: 240px;
+      overflow: hidden;
+    }
+    .gallery-card-img-wrap img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.4s ease;
+    }
+    .gallery-card:hover .gallery-card-img-wrap img {
+      transform: scale(1.06);
+    }
+    /* Zoom overlay hint */
+    .gallery-card-img-wrap::after {
+      content: '🔍';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%) scale(0.5);
+      font-size: 32px;
+      background: rgba(21,101,192,0.85);
+      width: 56px;
+      height: 56px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      opacity: 0;
+      transition: all 0.25s;
+    }
+    .gallery-card:hover .gallery-card-img-wrap::after {
+      opacity: 1;
+      transform: translate(-50%, -50%) scale(1);
+    }
+    .gallery-card-body {
+      padding: 16px 18px 18px;
+    }
+    .gallery-card-body h3 {
+      font-size: 15px;
+      font-weight: 700;
+      color: var(--accent);
+      margin: 0 0 5px;
+    }
+    .gallery-card-body p {
+      font-size: 13.5px;
+      color: var(--muted);
+      margin: 0;
+      line-height: 1.5;
+    }
+
+    /* CTA Section */
+    .gallery-cta-wrap {
+      max-width: 1200px;
+      margin: 10px auto 50px;
+      padding: 0 24px;
+    }
+    .feature-section {
+      background: linear-gradient(135deg, #0a2a5e, #1565c0);
+      border-radius: 20px;
+      padding: 40px 36px;
+      text-align: center;
+      color: #fff;
+    }
+    .feature-section h2 {
+      font-size: clamp(20px, 3vw, 28px);
+      font-weight: 800;
+      margin-bottom: 12px;
+    }
+    .feature-section p {
+      max-width: 700px;
+      margin: 0 auto 22px;
+      font-size: 15px;
+      opacity: 0.9;
+      line-height: 1.7;
+    }
+    .feature-section .btn {
+      background: #fff;
+      color: #1565c0;
+      padding: 12px 30px;
+      border-radius: 30px;
+      font-weight: 700;
+      font-size: 14px;
+      text-decoration: none;
+      display: inline-block;
+      transition: all 0.2s;
+    }
+    .feature-section .btn:hover { background: #f0f8ff; transform: translateY(-2px); }
+
+    /* ===== LIGHTBOX ===== */
+    .htl-overlay {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(5,15,35,0.94);
+      z-index: 9999;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+      backdrop-filter: blur(6px);
+    }
+    .htl-overlay.open { display: flex; }
+    .htl-box {
+      position: relative;
+      max-width: 860px;
+      width: 100%;
+      background: #fff;
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 40px 80px rgba(0,0,0,0.5);
+      animation: htlIn 0.25s ease;
+    }
+    @keyframes htlIn {
+      from { opacity:0; transform:scale(0.93); }
+      to   { opacity:1; transform:scale(1); }
+    }
+    .htl-img-wrap {
+      width: 100%;
+      max-height: 65vh;
+      overflow: hidden;
+      background: #0a1a3a;
+    }
+    .htl-img-wrap img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      display: block;
+    }
+    .htl-caption {
+      padding: 18px 22px;
+      background: #fff;
+    }
+    .htl-caption h3 {
+      font-size: 16px;
+      font-weight: 700;
+      color: #1565c0;
+      margin: 0 0 4px;
+    }
+    .htl-caption p {
+      font-size: 13.5px;
+      color: #666;
+      margin: 0;
+    }
+    .htl-close {
+      position: absolute;
+      top: 14px;
+      right: 14px;
+      background: rgba(10,40,80,0.8);
+      color: #fff;
+      border: none;
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      font-size: 18px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 10;
+      transition: background 0.2s;
+    }
+    .htl-close:hover { background: #c0392b; }
+    .htl-nav {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background: rgba(21,101,192,0.85);
+      color: #fff;
+      border: none;
+      width: 42px;
+      height: 42px;
+      border-radius: 50%;
+      font-size: 20px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: background 0.2s;
+      z-index: 10;
+    }
+    .htl-nav:hover { background: #1565c0; }
+    .htl-prev { left: 12px; }
+    .htl-next { right: 12px; }
+    .htl-counter {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      text-align: center;
+      padding: 6px;
+      background: rgba(10,40,80,0.6);
+      color: rgba(255,255,255,0.8);
+      font-size: 12px;
+    }
+  </style>
+</head>
+<body>
+  <!-- header (same as index) -->
+  <header class="site-header">
+    <div class="header-inner">
+      
+      <!-- Logo and Address Block -->
+      <div class="logo-and-address">
+        <a href="index.html" class="logo"><img src="logo.jpeg" alt="Hi-Tech Pathology Lab logo"></a>
+        <div class="address-block">
+          <div class="address">Janakpurdham</div>
+          <div class="address">Hospital Road</div>
+          <div class="address">Dhanusha, Nepal</div>
+        </div>
+      </div>
+      
+      <!-- Navigation removed toggle button -->
+      <nav id="mainNav" class="main-nav">
+        <ul class="navmenu">
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="services.html">OUR SERVICES</a></li>
+          <li><a href="about.html">ABOUT US</a></li>
+          <li><a href="book.html">BOOK A TEST</a></li>
+          <li><a class="active" href="gallery.html">GALLERY</a></li>
+          <li><a href="contact.html">CONTACT US</a></li>
+          <li><a href="team.html">OUR TEAM</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="page-content" style="padding:0;">
+
+    <!-- Premium Hero -->
+    <div class="gallery-hero">
+      <h1>Gallery — Hi-Tech Pathology Lab</h1>
+      <p>View our community health initiatives, partnerships, and events. Hi-Tech Pathology Lab is committed to serving the community in Janakpurdham, Dhanusha, Nepal through free health camps, exclusive health discounts, and strategic partnerships.</p>
+    </div>
+
+    <!-- Premium Gallery Grid -->
+    <div class="gallery-premium-grid">
+
+      <!-- Pic 1: MOU with Chamber of Industry -->
+      <div class="gallery-card" onclick="htlOpen(0)">
+        <div class="gallery-card-img-wrap">
+          <img src="pic1.jpeg" alt="MOU signing with Janakpurdham Chamber of Industry for exclusive health discounts">
+        </div>
+        <div class="gallery-card-body">
+          <h3>Janakpur Udhyog Banajya sang</h3>
+          <p>MOU with Janakpurdham Chamber of Industry on exclusive health discounts and offers</p>
+        </div>
+      </div>
+
+      <!-- Pic 2: MOU with Journalism Federation -->
+      <div class="gallery-card" onclick="htlOpen(1)">
+        <div class="gallery-card-img-wrap">
+          <img src="pic2.jpeg" alt="MOU signing with Nepal Federation of Journalism, Janakpurdham">
+        </div>
+        <div class="gallery-card-body">
+          <h3>Journalism Federation Partnership</h3>
+          <p>MOU with Nepal Federation of Journalism, Janakpurdham on exclusive health discounts and offers</p>
+        </div>
+      </div>
+
+      <!-- Pic 3: MOU with Patanjali Yog -->
+      <div class="gallery-card" onclick="htlOpen(2)">
+        <div class="gallery-card-img-wrap">
+          <img src="pic3.jpeg" alt="MOU signing with Janaki Patanjali Yog Sadhana center">
+        </div>
+        <div class="gallery-card-body">
+          <h3>Patanjali Yog Center Partnership</h3>
+          <p>MOU with Janaki Patanjali Yog Sadhana - One of the biggest Patanjali yoga centers in Nepal</p>
+        </div>
+      </div>
+
+      <!-- Pic 4: Health Screening at Patanjali -->
+      <div class="gallery-card" onclick="htlOpen(3)">
+        <div class="gallery-card-img-wrap">
+          <img src="pic4.jpeg" alt="Free health screening camp at Janaki Patanjali Yog Center">
+        </div>
+        <div class="gallery-card-body">
+          <h3>Health Screening at Patanjali Center</h3>
+          <p>Free health screening camp in Janaki Patanjali Yog Center</p>
+        </div>
+      </div>
+
+      <!-- Pic 5: Health Camp for Journalists -->
+      <div class="gallery-card" onclick="htlOpen(4)">
+        <div class="gallery-card-img-wrap">
+          <img src="pic5.jpeg" alt="Free health camp for journalists of Dhanushadham">
+        </div>
+        <div class="gallery-card-body">
+          <h3>Journalists Health Camp</h3>
+          <p>Free health camp for journalists of Dhanushadham</p>
+        </div>
+      </div>
+
+      <!-- Pic 6.1: World Diabetic Day Camp -->
+      <div class="gallery-card" onclick="htlOpen(5)">
+        <div class="gallery-card-img-wrap">
+          <img src="pic6a.jpeg" alt="Free health camp at Chamber of Industry on World Diabetic Day">
+        </div>
+        <div class="gallery-card-body">
+          <h3>World Diabetic Day Camp</h3>
+          <p>Free health camp at Janakpurdham Chamber of Industry on World Diabetic Day</p>
+        </div>
+      </div>
+
+      <!-- Pic 6.2: World Diabetic Day Camp -->
+      <div class="gallery-card" onclick="htlOpen(6)">
+        <div class="gallery-card-img-wrap">
+          <img src="pic6b.jpeg" alt="Free health screening on World Diabetic Day at Chamber of Industry">
+        </div>
+        <div class="gallery-card-body">
+          <h3>World Diabetic Day Event</h3>
+          <p>Free health screening at Chamber of Industry on World Diabetic Day</p>
+        </div>
+      </div>
+
+      <!-- Pic 6.3: World Diabetic Day Camp -->
+      <div class="gallery-card" onclick="htlOpen(7)">
+        <div class="gallery-card-img-wrap">
+          <img src="pic6c.jpeg" alt="Community health awareness on World Diabetic Day">
+        </div>
+        <div class="gallery-card-body">
+          <h3>Diabetic Awareness Campaign</h3>
+          <p>Community health awareness at Chamber of Industry on World Diabetic Day</p>
+        </div>
+      </div>
+
+      <!-- Pic 6.4: World Diabetic Day Camp -->
+      <div class="gallery-card" onclick="htlOpen(8)">
+        <div class="gallery-card-img-wrap">
+          <img src="pic6d.jpeg" alt="Free diagnostic testing on World Diabetic Day">
+        </div>
+        <div class="gallery-card-body">
+          <h3>Free Diabetic Testing</h3>
+          <p>Free diagnostic testing at Chamber of Industry on World Diabetic Day</p>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- CTA Section -->
+    <div class="gallery-cta-wrap">
+      <div class="feature-section">
+        <h2>Community Health Initiatives</h2>
+        <p>
+          Hi-Tech Pathology Lab in Janakpurdham, Dhanusha, Nepal is committed to serving the community through strategic partnerships 
+          and free health camps. We collaborate with leading organizations including the Chamber of Industry, Federation of Journalism, 
+          and Patanjali Yog Center to provide exclusive health discounts and free diagnostic services to the community.
+        </p>
+        <a href="services.html" class="btn">Learn About Our Services</a>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- LIGHTBOX -->
+  <div class="htl-overlay" id="htlOverlay" onclick="htlBgClose(event)">
+    <div class="htl-box" id="htlBox">
+      <button class="htl-close" onclick="htlClose()" aria-label="Close">&times;</button>
+      <button class="htl-nav htl-prev" onclick="htlNav(-1)" aria-label="Previous">&#8592;</button>
+      <button class="htl-nav htl-next" onclick="htlNav(1)" aria-label="Next">&#8594;</button>
+      <div class="htl-img-wrap">
+        <img id="htlImg" src="" alt="">
+        <div class="htl-counter" id="htlCounter"></div>
+      </div>
+      <div class="htl-caption">
+        <h3 id="htlTitle"></h3>
+        <p id="htlDesc"></p>
+      </div>
+    </div>
+  </div>
+
+  <footer class="ht-footer" id="site-footer">
+    <div class="ht-footer-inner">
+
+      <div class="ht-footer-brand">
+        <div class="ht-brand-row">
+          <img src="logo.jpeg" alt="Hi-Tech Pathology Lab logo">
+          <div class="ht-brand-name">Hi-Tech Pathology Lab<span>Janakpurdham · Nepal</span></div>
+        </div>
+        <p class="ht-footer-tagline">Accurate, reliable diagnostic testing powered by modern technology and 20+ years of trusted patient care.</p>
+        <div class="ht-social">
+          <a href="https://www.facebook.com/share/1Cw8PfNNuD/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" aria-label="Hi-Tech Pathology Lab on Facebook">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 12.06C22 6.51 17.52 2 12 2S2 6.51 2 12.06c0 5 3.66 9.13 8.44 9.94v-7.03H7.9v-2.91h2.54V9.84c0-2.51 1.49-3.89 3.77-3.89 1.09 0 2.23.2 2.23.2v2.46h-1.26c-1.24 0-1.63.78-1.63 1.58v1.87h2.78l-.44 2.91h-2.34V22c4.78-.81 8.44-4.94 8.44-9.94Z"/></svg>
+          </a>
+          <a href="https://www.instagram.com/hitechpathologylab?igsh=eGNydW0zc2ttOWtv" target="_blank" rel="noopener noreferrer" aria-label="Hi-Tech Pathology Lab on Instagram">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5Zm10 2H7a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3Zm-5 3.5A4.5 4.5 0 1 1 7.5 12 4.5 4.5 0 0 1 12 7.5Zm0 2A2.5 2.5 0 1 0 14.5 12 2.5 2.5 0 0 0 12 9.5Zm5.4-3.4a1 1 0 1 1-1 1 1 1 0 0 1 1-1Z"/></svg>
+          </a>
+        </div>
+        <button type="button" class="ht-back-top" onclick="window.scrollTo({top:0,behavior:'smooth'})">&#8679; BACK TO TOP</button>
+      </div>
+
+      <div class="ht-footer-col">
+        <h4>Site Map</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Our Services</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="book.html">Book a Test</a></li>
+          <li><a href="gallery.html" class="active">Gallery</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="team.html">Our Team</a></li>
+        </ul>
+      </div>
+
+      <div class="ht-footer-col">
+        <h4>Get in Touch</h4>
+        <address class="ht-contact-line">Hospital Road, Janakpurdham<br>Dhanusha, Nepal</address>
+        <p class="ht-contact-line"><a href="tel:+9779822382156">+977-9822382156</a></p>
+        <p class="ht-contact-line"><a href="mailto:hplnepal18@gmail.com">hplnepal18@gmail.com</a></p>
+      </div>
+
+    </div>
+
+    <div class="ht-footer-bottom">
+      <p>&copy; 2025 Hi-Tech Pathology Lab. All Rights Reserved.</p>
+      <small>Website by V and S Digital Solutions</small>
+    </div>
+  </footer>
+
+  <!-- WhatsApp Floating Button Integration -->
+  <a href="https://wa.me/9779822382156" class="whatsapp-float" target="_blank" aria-label="Chat with us on WhatsApp">
+    <span>&#128222;</span> 
+  </a>
+
+  <script src="script.js"></script>
+  <script>
+    // Lightbox data
+    var htlData = [
+      { src: 'pic1.jpeg', title: 'Janakpur Udhyog Banajya sang', desc: 'MOU with Janakpurdham Chamber of Industry on exclusive health discounts and offers' },
+      { src: 'pic2.jpeg', title: 'Journalism Federation Partnership', desc: 'MOU with Nepal Federation of Journalism, Janakpurdham on exclusive health discounts and offers' },
+      { src: 'pic3.jpeg', title: 'Patanjali Yog Center Partnership', desc: 'MOU with Janaki Patanjali Yog Sadhana - One of the biggest Patanjali yoga centers in Nepal' },
+      { src: 'pic4.jpeg', title: 'Health Screening at Patanjali Center', desc: 'Free health screening camp in Janaki Patanjali Yog Center' },
+      { src: 'pic5.jpeg', title: 'Journalists Health Camp', desc: 'Free health camp for journalists of Dhanushadham' },
+      { src: 'pic6a.jpeg', title: 'World Diabetic Day Camp', desc: 'Free health camp at Janakpurdham Chamber of Industry on World Diabetic Day' },
+      { src: 'pic6b.jpeg', title: 'World Diabetic Day Event', desc: 'Free health screening at Chamber of Industry on World Diabetic Day' },
+      { src: 'pic6c.jpeg', title: 'Diabetic Awareness Campaign', desc: 'Community health awareness at Chamber of Industry on World Diabetic Day' },
+      { src: 'pic6d.jpeg', title: 'Free Diabetic Testing', desc: 'Free diagnostic testing at Chamber of Industry on World Diabetic Day' }
+    ];
+    var htlCurrent = 0;
+    function htlOpen(idx) {
+      htlCurrent = idx;
+      htlShow();
+      document.getElementById('htlOverlay').classList.add('open');
+      document.body.style.overflow = 'hidden';
+    }
+    function htlShow() {
+      var d = htlData[htlCurrent];
+      document.getElementById('htlImg').src = d.src;
+      document.getElementById('htlImg').alt = d.title;
+      document.getElementById('htlTitle').textContent = d.title;
+      document.getElementById('htlDesc').textContent = d.desc;
+      document.getElementById('htlCounter').textContent = (htlCurrent + 1) + ' / ' + htlData.length;
+    }
+    function htlClose() {
+      document.getElementById('htlOverlay').classList.remove('open');
+      document.body.style.overflow = '';
+    }
+    function htlNav(dir) {
+      htlCurrent = (htlCurrent + dir + htlData.length) % htlData.length;
+      htlShow();
+    }
+    function htlBgClose(e) {
+      if (e.target === document.getElementById('htlOverlay')) htlClose();
+    }
+    document.addEventListener('keydown', function(e) {
+      if (!document.getElementById('htlOverlay').classList.contains('open')) return;
+      if (e.key === 'Escape') htlClose();
+      if (e.key === 'ArrowLeft') htlNav(-1);
+      if (e.key === 'ArrowRight') htlNav(1);
+    });
+  </script>
+</body>
+</html>
