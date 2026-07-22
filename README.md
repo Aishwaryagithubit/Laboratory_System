@@ -1,6 +1,6 @@
 # HiTech Laboratory Website
 
-A modern, responsive healthcare laboratory website developed to provide users with comprehensive information about diagnostic services, health packages, laboratory specialists, and online appointment booking. The project focuses on accessibility, responsive design, user experience, and search engine optimization.
+A modern responsive healthcare laboratory website developed to provide users with comprehensive information about diagnostic services, health packages, laboratory specialists, and online appointment booking. The project focuses on accessibility, responsive design, user experience, and search engine optimization.
 
 ## Live Demo
 
